@@ -105,8 +105,8 @@ bool PrimaryDir = true;
 // false is backward
 
 const int arraySize = 2; // Number of floats to read
-float floatArray[arraySize+1]; // Create a float array to store the values
-char buffer[arraySize+1]; // Character buffer to hold incoming data
+float floatArray[arraySize]; // Create a float array to store the values
+char buffer[20]; // Character buffer to hold incoming data
 
 // DC MOTOR CONTROL FCNS
 
@@ -202,7 +202,7 @@ void mControlBL(int mspeed, int mdir) {
 ////////////////////////////////SETUP//////////////////////////////////
 void setup() {
   // Start serial monitor
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // FR
   pinMode(pwmFR, OUTPUT); // ENA
@@ -242,9 +242,9 @@ void setup() {
 ////////////////////////////////LOOP//////////////////////////////////
 void loop() {
 
-if (Serial.available() > 0) {
+//if (Serial.available() > 0) {
   // Read data until '\n' is encountered or until the buffer is full
-  int bytesRead = Serial.readBytesUntil('\n', buffer, sizeof(buffer)+2);
+  int bytesRead = Serial.readBytesUntil('\n', buffer, sizeof(buffer));
     
   floatArray[0] = (int)buffer[0];
   floatArray[1] = (int)buffer[1];
@@ -252,7 +252,7 @@ if (Serial.available() > 0) {
   //int size = Serial.readBytesUntil('\n', buffer, sizeof(buffer));
   rcCH1 = (int)floatArray[0];
   rcCH2 = (int)floatArray[1];
-}
+//}
 
   // Print values to serial monitor for debugging
   // only print every 100 runs so don't spam
