@@ -1,6 +1,7 @@
 import serial
 import socket
 import struct
+import time
 
 with serial.Serial('/dev/ttyACM0', 9600, timeout=10) as ser:
 
@@ -34,8 +35,10 @@ with serial.Serial('/dev/ttyACM0', 9600, timeout=10) as ser:
                 throttle = -int(floats[2]*100.0)
 
             input_arr = [steer, throttle]
-            packed_data = struct.pack('ii', *input_arr)
+
+            packed_data = struct.pack('!ii', *input_arr)
             ser.write(packed_data)
+
             print(f"Received data: {input_arr}")
 
         except KeyboardInterrupt:

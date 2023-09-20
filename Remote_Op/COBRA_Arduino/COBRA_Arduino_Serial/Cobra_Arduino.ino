@@ -3,38 +3,39 @@
  * Last edit 7/27/23
 */
 
-// Include iBusBM Library (for controller)
-#include <IBusBM.h> // Library for radio control 
 // Servo Libraries
 #include <Servo.h> 
 #include <ServoEasing.hpp> // helps create smoother motion in servo motors 
+#include <HardwareSerial.h>
  
-// Create iBus Object
-IBusBM IBus;
+struct Msg{
+  unsigned short steer_l;
+  unsigned short steer_r;
+  unsigned short throttle;
+  unsigned short brake;
+};
+
+union BytesToMsg {
+  byte bytes[8];
+  Msg msg;
+};
+
+unsigned short my_steer_l = 0;
+unsigned short my_steer_r = 0;
+unsigned short my_throttle = 0;
+unsigned short my_brake = 0;
+
+BytesToMsg msg_buffer;
+
+const long BAUD_RATE = 115200;
 
 // Channel Values
 int rcCH1 = 0; // Left - Right
 int rcCH2 = 0; // Forward - Reverse
-int rcCH3 = 0; // 
-int rcCH4 = 0; //
-int rcCH5 = 0; // 
-int rcCH6 = 0; // 
-int rcCH7 = 0; // 
-int rcCH8 = 0; // 
-int rcCH9 = 0; // 
-int rcCH10 = 0; // 
 
 // Channel Values
 int rawCH1 = 0; // Left - Right
 int rawCH2 = 0; // Forward - Reverse
-int rawCH3 = 0; // 
-int rawCH4 = 0;
-int rawCH5 = 0; // 
-int rawCH6 = 0; // 
-int rawCH7 = 0; // 
-int rawCH8 = 0; // 
-int rawCH9 = 0; // 
-int rawCH10 = 0; // 
 
 // DC MOTOR PINS
 // Motor FR Control Connections
@@ -103,10 +104,6 @@ int lockoutCountdown;
 bool PrimaryDir = true;
 // true is forward
 // false is backward
-
-const int arraySize = 2; // Number of floats to read
-float floatArray[arraySize]; // Create a float array to store the values
-char buffer[20]; // Character buffer to hold incoming data
 
 // DC MOTOR CONTROL FCNS
 
@@ -202,7 +199,13 @@ void mControlBL(int mspeed, int mdir) {
 ////////////////////////////////SETUP//////////////////////////////////
 void setup() {
   // Start serial monitor
-  Serial.begin(9600);
+  Serial.begin(BAUD_RATE);
+  Serial.setTimeout(0.1);
+
+  //wait for a serial connection
+  while(Serial.available() <=0){
+    delay(100);
+  }
 
   // FR
   pinMode(pwmFR, OUTPUT); // ENA
@@ -241,53 +244,58 @@ void setup() {
 
 ////////////////////////////////LOOP//////////////////////////////////
 void loop() {
+  //parse any waiting serial messages
+  while(Serial.available()){
+    uint8_t msg_size;
+    Serial.readBytes(&msg_size,sizeof(msg_size));
+    if(msg_size == sizeof(msg_buffer)){
+      Serial.readBytes(msg_buffer.bytes,sizeof(msg_buffer));
+      Serial.flush();
+      my_steer_l = msg_buffer.msg.steer_l;
+      my_steer_r = msg_buffer.msg.steer_r;
+      my_throttle = msg_buffer.msg.throttle;
+      my_brake = msg_buffer.msg.brake;
+      digitalWrite(LED_BUILTIN,HIGH);
+    }
+  } 
 
-//if (Serial.available() > 0) {
-  // Read data until '\n' is encountered or until the buffer is full
-  int bytesRead = Serial.readBytesUntil('\n', buffer, sizeof(buffer));
-    
-  floatArray[0] = (int)buffer[0];
-  floatArray[1] = (int)buffer[1];
+  Serial.flush();
   
-  //int size = Serial.readBytesUntil('\n', buffer, sizeof(buffer));
-  rcCH1 = (int)floatArray[0];
-  rcCH2 = (int)floatArray[1];
-//}
-
+  rcCH1 = (my_steer_l > 0) ? my_steer_l : -my_steer_r;
+  rcCH2 = (my_throttle > 0) ? my_throttle : -my_brake;
+   
   // Print values to serial monitor for debugging
   // only print every 100 runs so don't spam
   if (counter == 0){
-  Serial.print("Ch1 = ");
-  Serial.print(rcCH1);
-
-  Serial.print(" Ch2 = ");
-  Serial.print(rcCH2);
-
-  counter++;
-  }
-  else{
+    Serial.print("Ch1 = ");
+    Serial.print(rcCH1);
+  
+    Serial.print(" Ch2 = ");
+    Serial.print(rcCH2);
+  
     counter++;
+  }else{
+      counter++;
   }
-  if(counter == 99){
+    
+  if(counter == 20){
     counter = 0;
   }
-
+  
   // Set speeds with channel 3 value
   MotorSpeedFR = 2.55*abs(rcCH2);
   MotorSpeedBR = 2.55*abs(rcCH2);
   MotorSpeedFL = 2.55*abs(rcCH2);
   MotorSpeedBL = 2.55*abs(rcCH2);
-
+  
   // Set angle
-    
   sFRAngle = sFRA0 + rcCH1*0.55;
   sBRAngle = sBRA0 + rcCH1*-0.2;
   sFLAngle = sFLA0 + rcCH1*0.55;
   sBLAngle = sBLA0 + rcCH1*-0.2;
-
-
+  
   // Normal Mode
-
+  
   // Set forward/backward direction with channel 2 value
   if (rcCH2 >= 0) {
     //Forward
@@ -304,91 +312,83 @@ void loop() {
     MotorDirBL = 0;
     //Serial.println("Backward");
   }
-
-  // Ensure that speeds are between 0 and 255
   
+  // Ensure that speeds are between 0 and 255
+    
   MotorSpeedFR = constrain(MotorSpeedFR, 0, 255);   
   MotorSpeedBR = constrain(MotorSpeedBR, 0, 255);
   MotorSpeedFL = constrain(MotorSpeedFL, 0, 255);
   MotorSpeedBL = constrain(MotorSpeedBL, 0, 255);
-
-  // Steer Servos
-
   
+  // Steer Servos
   sFR.startEaseTo(sFRAngle);
   sBR.startEaseTo(sBRAngle);
   sFL.startEaseTo(sFLAngle);
-  sBL.startEaseTo (sBLAngle);
-
+  sBL.startEaseTo(sBLAngle);
+  
   // output debugging info
   if (counter == 0){
-  Serial.print("Front Right Angle: ");
-  Serial.print(sFRAngle);
-
-  Serial.print("| Back Right Angle: ");
-  Serial.print(sBRAngle);
-
-  Serial.print("| Front Left Angle:");
-  Serial.print(sFLAngle);
- 
-  Serial.print("| Back Left Angle: ");
-  Serial.println(sBLAngle);
-
-  Serial.print("Front Right Speed: ");
-  Serial.print(MotorSpeedFR);
-
-  Serial.print("| Back Right Speed: ");
-  Serial.print(MotorSpeedBR);
-
-  Serial.print("| Front Left Speed:");
-  Serial.print(MotorSpeedFL);
- 
-  Serial.print("| Back Left Speed: ");
-  Serial.println(MotorSpeedBL);
+    Serial.print("Front Right Angle: ");
+    Serial.print(sFRAngle);
   
+    Serial.print("| Back Right Angle: ");
+    Serial.print(sBRAngle);
   
-  Serial.println();
-  }
-
-  if((MotorDirFR == 1 && !PrimaryDir) || (MotorDirFR == 0 && PrimaryDir) ){
+    Serial.print("| Front Left Angle:");
+    Serial.print(sFLAngle);
+   
+    Serial.print("| Back Left Angle: ");
+    Serial.println(sBLAngle);
+  
+    Serial.print("Front Right Speed: ");
+    Serial.print(MotorSpeedFR);
+  
+    Serial.print("| Back Right Speed: ");
+    Serial.print(MotorSpeedBR);
+  
+    Serial.print("| Front Left Speed:");
+    Serial.print(MotorSpeedFL);
+   
+    Serial.print("| Back Left Speed: ");
+    Serial.println(MotorSpeedBL);
+    
+    
+    Serial.println();
+   }
+  
+   if((MotorDirFR == 1 && !PrimaryDir) || (MotorDirFR == 0 && PrimaryDir) ){
     // start lockout countdown
     lockoutCountdown = 6;
     motorLockout = true;
     lockoutCountdown--;
-  }
+   }
+    
+   if(MotorDirFR == 1){
+     PrimaryDir = true;
+   }else{
+     PrimaryDir = false;
+   }
   
-  if(MotorDirFR == 1){
-    PrimaryDir = true;
-  }
-  else{
-    PrimaryDir = false;
-  }
-
-  if(lockoutCountdown <= 0){
+   if(lockoutCountdown <= 0){
     motorLockout = false;
-  }
-  else{
+   }else{
     lockoutCountdown--;
-  }  
-  if(!motorLockout){
-  //Drive Motors
-  mControlFR(MotorSpeedFR, MotorDirFR);
-  mControlBR(MotorSpeedBR, MotorDirBR);
-  mControlFL(MotorSpeedFL, MotorDirFL);
-  mControlBL(MotorSpeedBL, MotorDirBL);
-  }
-  else{
-  mControlFR(0, MotorDirFR);
-  mControlBR(0, MotorDirBR);
-  mControlFL(0, MotorDirFL);
-  mControlBL(0, MotorDirBL);
-  }
+   }  
 
+   if(!motorLockout){
+   //Drive Motors
+     mControlFR(MotorSpeedFR, MotorDirFR);
+     mControlBR(MotorSpeedBR, MotorDirBR);
+     mControlFL(MotorSpeedFL, MotorDirFL);
+     mControlBL(MotorSpeedBL, MotorDirBL);
+   }
+   else{
+     mControlFR(0, MotorDirFR);
+     mControlBR(0, MotorDirBR);
+     mControlFL(0, MotorDirFL);
+     mControlBL(0, MotorDirBL);
+   }
 
-  delay(10);
-
-  
-  // Clear the buffer for the next input
-  memset(buffer, 0, sizeof(buffer));
+   delay(10);
   
 }
