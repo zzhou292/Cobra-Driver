@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from udp_float_receiver_cpp/msg/TwoFloats.msg
+// generated code does not contain a copyright notice
+
+
+module udp_float_receiver_cpp {
+  module msg {
+    struct TwoFloats {
+      double float1;
+
+      double float2;
+    };
+  };
+};

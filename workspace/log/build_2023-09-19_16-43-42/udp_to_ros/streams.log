@@ -1,0 +1,31 @@
+[0.443s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_to_ros': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed
+[0.620s] running egg_info
+[0.620s] writing ../../build/udp_to_ros/udp_to_ros.egg-info/PKG-INFO
+[0.620s] writing dependency_links to ../../build/udp_to_ros/udp_to_ros.egg-info/dependency_links.txt
+[0.620s] writing entry points to ../../build/udp_to_ros/udp_to_ros.egg-info/entry_points.txt
+[0.620s] writing requirements to ../../build/udp_to_ros/udp_to_ros.egg-info/requires.txt
+[0.620s] writing top-level names to ../../build/udp_to_ros/udp_to_ros.egg-info/top_level.txt
+[0.621s] reading manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[0.622s] writing manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[0.622s] running build
+[0.622s] running build_py
+[0.622s] copying udp_to_ros/udp_listener_node.py -> /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build/lib/udp_to_ros
+[0.622s] running install
+[0.622s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.622s]   warnings.warn(
+[0.623s] running install_lib
+[0.623s] copying /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build/lib/udp_to_ros/udp_listener_node.py -> /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros
+[0.623s] byte-compiling /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros/udp_listener_node.py to udp_listener_node.cpython-310.pyc
+[0.624s]   File "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros/udp_listener_node.py", line 37
+[0.624s]     self.ints_send[0] = (int)self.floats[0]
+[0.624s]                              ^^^^
+[0.624s] SyntaxError: invalid syntax
+[0.624s] 
+[0.624s] running install_data
+[0.624s] running install_egg_info
+[0.625s] removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[0.625s] Copying ../../build/udp_to_ros/udp_to_ros.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros-0.0.0-py3.10.egg-info
+[0.626s] running install_scripts
+[0.640s] Installing udp_listener script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/udp_to_ros
+[0.640s] writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log'
+[0.655s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_to_ros' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed

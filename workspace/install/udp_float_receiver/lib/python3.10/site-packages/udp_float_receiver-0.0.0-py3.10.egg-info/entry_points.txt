@@ -1,0 +1,3 @@
+[console_scripts]
+receiver = udp_float_receiver.receiver:main
+

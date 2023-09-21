@@ -1,0 +1,21 @@
+[0.423s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_float_receiver': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_float_receiver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_float_receiver build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/install.log --single-version-externally-managed
+[0.593s] running egg_info
+[0.593s] writing ../../build/udp_float_receiver/udp_float_receiver.egg-info/PKG-INFO
+[0.593s] writing dependency_links to ../../build/udp_float_receiver/udp_float_receiver.egg-info/dependency_links.txt
+[0.593s] writing entry points to ../../build/udp_float_receiver/udp_float_receiver.egg-info/entry_points.txt
+[0.593s] writing requirements to ../../build/udp_float_receiver/udp_float_receiver.egg-info/requires.txt
+[0.594s] writing top-level names to ../../build/udp_float_receiver/udp_float_receiver.egg-info/top_level.txt
+[0.594s] reading manifest file '../../build/udp_float_receiver/udp_float_receiver.egg-info/SOURCES.txt'
+[0.595s] writing manifest file '../../build/udp_float_receiver/udp_float_receiver.egg-info/SOURCES.txt'
+[0.595s] running build
+[0.595s] running install
+[0.595s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.595s]   warnings.warn(
+[0.595s] running install_data
+[0.595s] running install_egg_info
+[0.597s] removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_float_receiver/lib/python3.10/site-packages/udp_float_receiver-0.0.0-py3.10.egg-info' (and everything under it)
+[0.597s] Copying ../../build/udp_float_receiver/udp_float_receiver.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_float_receiver/lib/python3.10/site-packages/udp_float_receiver-0.0.0-py3.10.egg-info
+[0.597s] running install_scripts
+[0.610s] Installing receiver script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_float_receiver/lib/udp_float_receiver
+[0.610s] writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/install.log'
+[0.625s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_float_receiver' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_float_receiver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_float_receiver build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_float_receiver/install.log --single-version-externally-managed

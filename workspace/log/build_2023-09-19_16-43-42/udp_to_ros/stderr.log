@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros/udp_listener_node.py", line 37
+    self.ints_send[0] = (int)self.floats[0]
+                             ^^^^
+SyntaxError: invalid syntax
+
