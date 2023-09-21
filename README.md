@@ -7,3 +7,5 @@ The repo contains the following packages:
 
 2. Sim: simulation folder, contains various simulation files used to simulate Cobra in various scenarios.
 
+![Cobra-Real](documentation/images/IMG_6986.jpeg)
+![Cobra-Real](documentation/images/IMG_6987.jpeg)
