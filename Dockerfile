@@ -7,9 +7,11 @@ RUN apt-get update && apt-get install -y \
     git \
     vim \
     build-essential \
-    curl
+    curl \
+    python3-pip
     
-    
+RUN pip3 install pyserial
+
 # ============================ Install Ros 2 ====================================
 RUN apt update
 RUN apt install locales
@@ -28,9 +30,15 @@ RUN apt upgrade -y
 RUN apt install ros-iron-desktop -y
 RUN apt install ros-iron-ros-base -y
 RUN echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc
+RUN apt-get install ros-iron-image-transport-plugins -y
+RUN apt-get install python3-serial -y
+RUN apt-get install ros-iron-camera-info-manager -y
+RUN apt install ros-iron-rosbridge-suite -y
 
 
 # ============================ Copy Files ========================================
 COPY . /home
+
+
 
 # Say "Jason is amazing~~~~"
