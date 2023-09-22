@@ -1,0 +1,3 @@
+[console_scripts]
+udp_listener = udp_to_ros.udp_listener_node:main
+
