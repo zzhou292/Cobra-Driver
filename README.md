@@ -7,5 +7,7 @@ The repo contains the following packages:
 
 2. Sim: simulation folder, contains various simulation files used to simulate Cobra in various scenarios.
 
+3. Workspace: contains ROS2 workspace for various nodes used for Cobra's hardware support.
+
 ![Cobra-Real](documentation/images/IMG_6986.jpeg)
 ![Cobra-Real](documentation/images/IMG_6987.jpeg)
