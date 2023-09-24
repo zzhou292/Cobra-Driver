@@ -5,6 +5,7 @@
 
 // Servo Libraries
 #include <Servo.h> 
+
 #include <ServoEasing.hpp> // helps create smoother motion in servo motors 
 #include <HardwareSerial.h>
  
@@ -258,8 +259,6 @@ void loop() {
       digitalWrite(LED_BUILTIN,HIGH);
     }
   } 
-
-  Serial.flush();
   
   rcCH1 = (my_steer_l > 0) ? my_steer_l : -my_steer_r;
   rcCH2 = (my_throttle > 0) ? my_throttle : -my_brake;
@@ -289,10 +288,10 @@ void loop() {
   MotorSpeedBL = 2.55*abs(rcCH2);
   
   // Set angle
-  sFRAngle = sFRA0 + rcCH1*0.55;
-  sBRAngle = sBRA0 + rcCH1*-0.2;
-  sFLAngle = sFLA0 + rcCH1*0.55;
-  sBLAngle = sBLA0 + rcCH1*-0.2;
+  sFRAngle = sFRA0 + rcCH1*0.3;
+  sBRAngle = sBRA0 + rcCH1*-0.25;
+  sFLAngle = sFLA0 + rcCH1*0.3;
+  sBLAngle = sBLA0 + rcCH1*-0.25;
   
   // Normal Mode
   
@@ -388,7 +387,7 @@ void loop() {
      mControlFL(0, MotorDirFL);
      mControlBL(0, MotorDirBL);
    }
-
-   delay(10);
+   
+   delay(5);
   
 }
