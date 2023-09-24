@@ -8,9 +8,11 @@ RUN apt-get update && apt-get install -y \
     vim \
     build-essential \
     curl \
-    python3-pip
+    python3-pip \
+    htop
     
 RUN pip3 install pyserial
+RUN pip3 install torch torchvision
 
 # ============================ Install Ros 2 ====================================
 RUN apt update
@@ -34,10 +36,13 @@ RUN apt-get install ros-iron-image-transport-plugins -y
 RUN apt-get install python3-serial -y
 RUN apt-get install ros-iron-camera-info-manager -y
 RUN apt install ros-iron-rosbridge-suite -y
-
+RUN apt install ros-iron-cv-bridge ros-iron-image-transport python3-opencv -y
 
 # ============================ Copy Files ========================================
 COPY . /home
+
+# ============================ Thirdparty Dependencies ========================================
+RUN pip3 install -r /home/workspace/src/yolov5_ros2/yolov5/requirements.txt
 
 
 
