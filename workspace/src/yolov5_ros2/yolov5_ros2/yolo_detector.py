@@ -11,8 +11,11 @@ class YOLOv5Detector(Node):
         super().__init__('yolov5_detector')
         self.bridge = CvBridge()
         
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
         # Load YOLO model
-        self.model = torch.hub.load('ultralytics/yolov5', 'yolov5x')
+        self.model = torch.hub.load('ultralytics/yolov5', 'yolov5n').to(device)
         
         self.subscription = self.create_subscription(
             Image,

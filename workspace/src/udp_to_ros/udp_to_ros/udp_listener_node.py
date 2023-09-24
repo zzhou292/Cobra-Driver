@@ -16,7 +16,7 @@ class UDPListenerNode(Node):
         
         # Serial setup
         BAUD_RATE = 115200
-        PORT = "/dev/ttyACM1"
+        PORT = "/dev/ttyACM0"
         TIMEOUT = 0.1
         self.arduino = serial.Serial(port=PORT,baudrate=BAUD_RATE,timeout=TIMEOUT)
         
