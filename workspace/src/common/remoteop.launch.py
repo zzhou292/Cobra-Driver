@@ -18,6 +18,10 @@ def generate_launch_description():
         Node(
             package='udp_to_ros',
             executable='udp_listener'
+        ),
+        Node(
+            package='yolov5_ros2',
+            executable='yolo_detector'
         )
     ])
 
