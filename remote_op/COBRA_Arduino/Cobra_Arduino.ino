@@ -201,12 +201,7 @@ void mControlBL(int mspeed, int mdir) {
 void setup() {
   // Start serial monitor
   Serial.begin(BAUD_RATE);
-  Serial.setTimeout(0.1);
 
-  //wait for a serial connection
-  while(Serial.available() <=0){
-    delay(100);
-  }
 
   // FR
   pinMode(pwmFR, OUTPUT); // ENA
@@ -240,11 +235,11 @@ void setup() {
   sBR.setSpeed(300);
   sFL.setSpeed(300);
   sBL.setSpeed(300);
-
 }
 
 ////////////////////////////////LOOP//////////////////////////////////
 void loop() {
+
   //parse any waiting serial messages
   while(Serial.available()){
     uint8_t msg_size;
@@ -265,6 +260,7 @@ void loop() {
    
   // Print values to serial monitor for debugging
   // only print every 100 runs so don't spam
+  
   if (counter == 0){
     Serial.print("Ch1 = ");
     Serial.print(rcCH1);
@@ -280,6 +276,7 @@ void loop() {
   if(counter == 20){
     counter = 0;
   }
+  
   
   // Set speeds with channel 3 value
   MotorSpeedFR = 2.55*abs(rcCH2);
@@ -326,6 +323,7 @@ void loop() {
   sBL.startEaseTo(sBLAngle);
   
   // output debugging info
+  
   if (counter == 0){
     Serial.print("Front Right Angle: ");
     Serial.print(sFRAngle);
@@ -354,6 +352,7 @@ void loop() {
     
     Serial.println();
    }
+   
   
    if((MotorDirFR == 1 && !PrimaryDir) || (MotorDirFR == 0 && PrimaryDir) ){
     // start lockout countdown
