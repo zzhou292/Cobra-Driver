@@ -14,6 +14,10 @@ def generate_launch_description():
         Node(
             package='usb_cam',
             executable='usb_cam_node_exe'
+        ),
+        Node(
+            package='udp_to_ros',
+            executable='udp_listener'
         )
     ])
 

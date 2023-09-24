@@ -10,13 +10,13 @@ class UDPListenerNode(Node):
         super().__init__('udp_listener_node')
         self.get_logger().info("UDP Listener Node is running...")
         self.udp_ip = "0.0.0.0"  # Listen to all interfaces
-        self.udp_port = 12345     # You can change this as needed
+        self.udp_port = 1209     # You can change this as needed
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.sock.bind((self.udp_ip, self.udp_port))
         
         # Serial setup
-        BAUD_RATE = 250000
-        PORT = "/dev/ttyACM0"
+        BAUD_RATE = 115200
+        PORT = "/dev/ttyACM1"
         TIMEOUT = 0.1
         self.arduino = serial.Serial(port=PORT,baudrate=BAUD_RATE,timeout=TIMEOUT)
         
@@ -34,9 +34,10 @@ class UDPListenerNode(Node):
         
             
             if self.floats[0] >= 0.0:
-                self.ints_send[0] = (int)(self.steer)
+                self.ints_send[1] = (int)(self.steer)
             else:
-                self.ints_send[1] = -(int)(self.steer)
+            	self.ints_send[0] = -(int)(self.steer)
+                
             
             self.ints_send[2] = (int)(self.throttle)
             self.ints_send[3] = (int)(self.brake)
@@ -48,7 +49,7 @@ class UDPListenerNode(Node):
             
     def send_to_arduino(self, data):
         try:
-            msg_size = struct.pack("<B",4)
+            msg_size = struct.pack("<B",8)
             msg_data = struct.pack("<4H",*[data[0],data[1],data[2],data[3]])
             msg = b"".join([msg_size,msg_data])
             t0 = time.time()
