@@ -1,0 +1,32 @@
+[3.409s] Invoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/common/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/common build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/common/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log --single-version-externally-managed
+[3.943s] running egg_info
+[3.981s] writing ../../build/common/common.egg-info/PKG-INFO
+[3.981s] writing dependency_links to ../../build/common/common.egg-info/dependency_links.txt
+[3.981s] writing requirements to ../../build/common/common.egg-info/requires.txt
+[3.982s] writing top-level names to ../../build/common/common.egg-info/top_level.txt
+[4.255s] reading manifest file '../../build/common/common.egg-info/SOURCES.txt'
+[4.258s] writing manifest file '../../build/common/common.egg-info/SOURCES.txt'
+[4.258s] running build
+[4.259s] running build_py
+[4.266s] running install
+[4.267s] /home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[4.267s] !!
+[4.267s] 
+[4.268s]         ********************************************************************************
+[4.268s]         Please avoid running ``setup.py`` directly.
+[4.268s]         Instead, use pypa/build, pypa/installer or other
+[4.268s]         standards-based tools.
+[4.268s] 
+[4.268s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[4.268s]         ********************************************************************************
+[4.269s] 
+[4.269s] !!
+[4.269s]   self.initialize_options()
+[4.273s] running install_lib
+[4.308s] running install_data
+[4.340s] running install_egg_info
+[4.376s] removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages/common-0.0.0-py3.8.egg-info' (and everything under it)
+[4.376s] Copying ../../build/common/common.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages/common-0.0.0-py3.8.egg-info
+[4.378s] running install_scripts
+[4.490s] writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log'
+[4.740s] Invoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/common/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/common build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/common/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log --single-version-externally-managed

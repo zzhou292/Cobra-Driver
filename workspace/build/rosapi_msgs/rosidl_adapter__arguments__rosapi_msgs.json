@@ -1,0 +1,30 @@
+{
+  "package_name": "rosapi_msgs",
+  "non_idl_tuples": [
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:msg/TypeDef.msg",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/DeleteParam.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/GetActionServers.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/GetParam.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/GetParamNames.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/GetROSVersion.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/GetTime.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/HasParam.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/MessageDetails.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/Nodes.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/NodeDetails.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/Publishers.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServiceNode.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServiceProviders.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServiceRequestDetails.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServiceResponseDetails.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/Services.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServicesForType.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/ServiceType.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/SetParam.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/Subscribers.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/Topics.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/TopicsAndRawTypes.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/TopicsForType.srv",
+    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi_msgs:srv/TopicType.srv"
+  ]
+}

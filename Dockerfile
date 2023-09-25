@@ -1,6 +1,6 @@
 # Author: Jason Zhou (zzhou292@wisc.edu)
-FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
-
+#FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
+FROM nvcr.io/nvidia/l4t-base:35.4.1
 # ============================ Install Dep ======================================
 RUN apt-get update && apt-get install -y \
     fish \
@@ -29,7 +29,7 @@ RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install ros-dev-tools -y
 RUN apt update
 RUN apt upgrade -y
-RUN apt install ros-iron-desktop -y
+#RUN apt install ros-iron-desktop -y
 RUN apt install ros-iron-ros-base -y
 RUN echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc
 RUN apt-get install ros-iron-image-transport-plugins -y
