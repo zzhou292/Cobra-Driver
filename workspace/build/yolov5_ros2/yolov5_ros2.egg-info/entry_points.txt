@@ -1,2 +1,0 @@
-[console_scripts]
-yolo_detector = yolov5_ros2.yolo_detector:main
