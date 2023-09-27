@@ -80,14 +80,15 @@ static bool _TestFloat32Array__cdr_deserialize(
       rosidl_runtime_c__float__Sequence__fini(&ros_message->data);
     }
     if (!rosidl_runtime_c__float__Sequence__init(&ros_message->data, size)) {
-      return "failed to create array for field 'data'";
+      fprintf(stderr, "failed to create array for field 'data'");
+      return false;
     }
     auto array_ptr = ros_message->data.data;
     cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_rosbridge_test_msgs
 size_t get_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
@@ -128,6 +129,7 @@ static uint32_t _TestFloat32Array__get_serialized_size(const void * untyped_ros_
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_rosbridge_test_msgs
 size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -136,12 +138,15 @@ size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
   // member: data
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
@@ -152,10 +157,19 @@ size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
   return current_alignment - initial_alignment;
 }
 
-static size_t _TestFloat32Array__max_serialized_size(bool & full_bounded)
+static size_t _TestFloat32Array__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
-    full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_rosbridge_test_msgs__msg__TestFloat32Array(
+    full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 
@@ -172,6 +186,9 @@ static rosidl_message_type_support_t _TestFloat32Array__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_TestFloat32Array,
   get_message_typesupport_handle_function,
+  &rosbridge_test_msgs__msg__TestFloat32Array__get_type_hash,
+  &rosbridge_test_msgs__msg__TestFloat32Array__get_type_description,
+  &rosbridge_test_msgs__msg__TestFloat32Array__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

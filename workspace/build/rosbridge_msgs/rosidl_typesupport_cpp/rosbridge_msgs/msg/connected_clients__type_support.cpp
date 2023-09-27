@@ -4,6 +4,7 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosbridge_msgs/msg/detail/connected_clients__functions.h"
 #include "rosbridge_msgs/msg/detail/connected_clients__struct.hpp"
 #include "rosidl_typesupport_cpp/identifier.hpp"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t ConnectedClients_message_type_support
   ::rosidl_typesupport_cpp::typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_ConnectedClients_message_typesupport_map),
   ::rosidl_typesupport_cpp::get_message_typesupport_handle_function,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_hash,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_description,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_cpp

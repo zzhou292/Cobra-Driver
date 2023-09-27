@@ -76,7 +76,7 @@ static bool _TestFloat32BoundedArray__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_rosbridge_test_msgs
 size_t get_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
@@ -115,6 +115,7 @@ static uint32_t _TestFloat32BoundedArray__get_serialized_size(const void * untyp
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_rosbridge_test_msgs
 size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -123,7 +124,9 @@ size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
   // member: data
   {
@@ -136,10 +139,19 @@ size_t max_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
   return current_alignment - initial_alignment;
 }
 
-static size_t _TestFloat32BoundedArray__max_serialized_size(bool & full_bounded)
+static size_t _TestFloat32BoundedArray__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
-    full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_rosbridge_test_msgs__msg__TestFloat32BoundedArray(
+    full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 
@@ -156,6 +168,9 @@ static rosidl_message_type_support_t _TestFloat32BoundedArray__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_TestFloat32BoundedArray,
   get_message_typesupport_handle_function,
+  &rosbridge_test_msgs__msg__TestFloat32BoundedArray__get_type_hash,
+  &rosbridge_test_msgs__msg__TestFloat32BoundedArray__get_type_description,
+  &rosbridge_test_msgs__msg__TestFloat32BoundedArray__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

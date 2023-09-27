@@ -4,8 +4,9 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
-#include "rosbridge_test_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "rosbridge_test_msgs/msg/detail/test_u_int8__struct.h"
+#include "rosbridge_test_msgs/msg/detail/test_u_int8__type_support.h"
+#include "rosbridge_test_msgs/msg/detail/test_u_int8__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t TestUInt8_message_type_support_handle
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_TestUInt8_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &rosbridge_test_msgs__msg__TestUInt8__get_type_hash,
+  &rosbridge_test_msgs__msg__TestUInt8__get_type_description,
+  &rosbridge_test_msgs__msg__TestUInt8__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -85,7 +89,6 @@ extern "C"
 {
 #endif
 
-ROSIDL_TYPESUPPORT_C_EXPORT_rosbridge_test_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, rosbridge_test_msgs, msg, TestUInt8)() {
   return &::rosbridge_test_msgs::msg::rosidl_typesupport_c::TestUInt8_message_type_support_handle;

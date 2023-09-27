@@ -1,8 +1,8 @@
-# Install script for directory: /home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi
+# Install script for directory: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosapi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbel/Desktop/Cobra-Driver/workspace/install/rosapi")
+  set(CMAKE_INSTALL_PREFIX "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,91 +37,100 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/pythonpath.sh")
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/pythonpath.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/site-packages/rosapi" TYPE DIRECTORY FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/src/rosapi/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/rosapi-1.3.1-py3.10.egg-info" TYPE DIRECTORY FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_python/rosapi/rosapi.egg-info/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/rosapi" TYPE DIRECTORY FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/src/rosapi/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3" "-m" "compileall"
-        "/home/sbel/Desktop/Cobra-Driver/workspace/install/rosapi/lib/python3.8/site-packages/rosapi"
+        "/usr/bin/python3.10" "-m" "compileall"
+        "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages/rosapi"
       )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rosapi")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rosapi")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rosapi")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rosapi")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.bash")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.zsh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/package.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_environment_hooks/package.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/packages/rosapi")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_index/share/ament_index/resource_index/packages/rosapi")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi/cmake" TYPE FILE FILES
-    "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_core/rosapiConfig.cmake"
-    "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/ament_cmake_core/rosapiConfig-version.cmake"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_core/rosapiConfig.cmake"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/ament_cmake_core/rosapiConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosapi" TYPE PROGRAM FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/scripts/rosapi_node")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosapi" TYPE PROGRAM FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/scripts/rosapi_node")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/mapping_rules.yaml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosapi" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosapi/mapping_rules.yaml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -132,5 +141,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosapi/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosapi/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

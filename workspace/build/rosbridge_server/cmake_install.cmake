@@ -1,8 +1,8 @@
-# Install script for directory: /home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server
+# Install script for directory: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbel/Desktop/Cobra-Driver/workspace/install/rosbridge_server")
+  set(CMAKE_INSTALL_PREFIX "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,94 +37,103 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/pythonpath.sh")
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/pythonpath.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/site-packages/rosbridge_server" TYPE DIRECTORY FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/src/rosbridge_server/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/rosbridge_server-1.3.1-py3.10.egg-info" TYPE DIRECTORY FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_python/rosbridge_server/rosbridge_server.egg-info/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/rosbridge_server" TYPE DIRECTORY FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/src/rosbridge_server/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3" "-m" "compileall"
-        "/home/sbel/Desktop/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.8/site-packages/rosbridge_server"
+        "/usr/bin/python3.10" "-m" "compileall"
+        "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages/rosbridge_server"
       )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rosbridge_server")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rosbridge_server")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rosbridge_server")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rosbridge_server")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/environment" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.bash")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.zsh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/package.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_environment_hooks/package.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/packages/rosbridge_server")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_index/share/ament_index/resource_index/packages/rosbridge_server")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/cmake" TYPE FILE FILES
-    "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_core/rosbridge_serverConfig.cmake"
-    "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_core/rosbridge_serverConfig-version.cmake"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_core/rosbridge_serverConfig.cmake"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/ament_cmake_core/rosbridge_serverConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES
-    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/scripts/rosbridge_websocket.py"
-    "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/scripts/rosbridge_websocket"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/scripts/rosbridge_websocket.py"
+    "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/scripts/rosbridge_websocket"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/launch" TYPE FILE FILES "/home/sbel/Desktop/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/launch/rosbridge_websocket_launch.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/launch" TYPE FILE FILES "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/rosbridge_suite/rosbridge_server/launch/rosbridge_websocket_launch.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -135,5 +144,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_server/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_server/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

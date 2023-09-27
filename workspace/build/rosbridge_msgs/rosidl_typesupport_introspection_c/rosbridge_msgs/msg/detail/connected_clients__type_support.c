@@ -23,7 +23,7 @@ extern "C"
 {
 #endif
 
-void ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_init_function(
+void rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -32,12 +32,12 @@ void ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_init
   rosbridge_msgs__msg__ConnectedClients__init(message_memory);
 }
 
-void ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_fini_function(void * message_memory)
+void rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_fini_function(void * message_memory)
 {
   rosbridge_msgs__msg__ConnectedClients__fini(message_memory);
 }
 
-size_t ConnectedClients__rosidl_typesupport_introspection_c__size_function__ConnectedClient__clients(
+size_t rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__size_function__ConnectedClients__clients(
   const void * untyped_member)
 {
   const rosbridge_msgs__msg__ConnectedClient__Sequence * member =
@@ -45,7 +45,7 @@ size_t ConnectedClients__rosidl_typesupport_introspection_c__size_function__Conn
   return member->size;
 }
 
-const void * ConnectedClients__rosidl_typesupport_introspection_c__get_const_function__ConnectedClient__clients(
+const void * rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_const_function__ConnectedClients__clients(
   const void * untyped_member, size_t index)
 {
   const rosbridge_msgs__msg__ConnectedClient__Sequence * member =
@@ -53,7 +53,7 @@ const void * ConnectedClients__rosidl_typesupport_introspection_c__get_const_fun
   return &member->data[index];
 }
 
-void * ConnectedClients__rosidl_typesupport_introspection_c__get_function__ConnectedClient__clients(
+void * rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_function__ConnectedClients__clients(
   void * untyped_member, size_t index)
 {
   rosbridge_msgs__msg__ConnectedClient__Sequence * member =
@@ -61,7 +61,29 @@ void * ConnectedClients__rosidl_typesupport_introspection_c__get_function__Conne
   return &member->data[index];
 }
 
-bool ConnectedClients__rosidl_typesupport_introspection_c__resize_function__ConnectedClient__clients(
+void rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__fetch_function__ConnectedClients__clients(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const rosbridge_msgs__msg__ConnectedClient * item =
+    ((const rosbridge_msgs__msg__ConnectedClient *)
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_const_function__ConnectedClients__clients(untyped_member, index));
+  rosbridge_msgs__msg__ConnectedClient * value =
+    (rosbridge_msgs__msg__ConnectedClient *)(untyped_value);
+  *value = *item;
+}
+
+void rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__assign_function__ConnectedClients__clients(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  rosbridge_msgs__msg__ConnectedClient * item =
+    ((rosbridge_msgs__msg__ConnectedClient *)
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_function__ConnectedClients__clients(untyped_member, index));
+  const rosbridge_msgs__msg__ConnectedClient * value =
+    (const rosbridge_msgs__msg__ConnectedClient *)(untyped_value);
+  *item = *value;
+}
+
+bool rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__resize_function__ConnectedClients__clients(
   void * untyped_member, size_t size)
 {
   rosbridge_msgs__msg__ConnectedClient__Sequence * member =
@@ -70,7 +92,7 @@ bool ConnectedClients__rosidl_typesupport_introspection_c__resize_function__Conn
   return rosbridge_msgs__msg__ConnectedClient__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array[1] = {
   {
     "clients",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -81,41 +103,46 @@ static rosidl_typesupport_introspection_c__MessageMember ConnectedClients__rosid
     false,  // is upper bound
     offsetof(rosbridge_msgs__msg__ConnectedClients, clients),  // bytes offset in struct
     NULL,  // default value
-    ConnectedClients__rosidl_typesupport_introspection_c__size_function__ConnectedClient__clients,  // size() function pointer
-    ConnectedClients__rosidl_typesupport_introspection_c__get_const_function__ConnectedClient__clients,  // get_const(index) function pointer
-    ConnectedClients__rosidl_typesupport_introspection_c__get_function__ConnectedClient__clients,  // get(index) function pointer
-    ConnectedClients__rosidl_typesupport_introspection_c__resize_function__ConnectedClient__clients  // resize(index) function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__size_function__ConnectedClients__clients,  // size() function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_const_function__ConnectedClients__clients,  // get_const(index) function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__get_function__ConnectedClients__clients,  // get(index) function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__fetch_function__ConnectedClients__clients,  // fetch(index, &value) function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__assign_function__ConnectedClients__clients,  // assign(index, value) function pointer
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__resize_function__ConnectedClients__clients  // resize(index) function pointer
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_members = {
   "rosbridge_msgs__msg",  // message namespace
   "ConnectedClients",  // message name
   1,  // number of fields
   sizeof(rosbridge_msgs__msg__ConnectedClients),
-  ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array,  // message members
-  ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_init_function,  // function to initialize message memory (memory has to be allocated)
-  ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_fini_function  // function to terminate message instance (will not free memory)
+  rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array,  // message members
+  rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_init_function,  // function to initialize message memory (memory has to be allocated)
+  rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle = {
+static rosidl_message_type_support_t rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle = {
   0,
-  &ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_members,
+  &rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_members,
   get_message_typesupport_handle_function,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_hash,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_description,
+  &rosbridge_msgs__msg__ConnectedClients__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_rosbridge_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rosbridge_msgs, msg, ConnectedClients)() {
-  ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array[0].members_ =
+  rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rosbridge_msgs, msg, ConnectedClient)();
-  if (!ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle.typesupport_identifier) {
-    ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle.typesupport_identifier =
+  if (!rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle.typesupport_identifier) {
+    rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle;
+  return &rosbridge_msgs__msg__ConnectedClients__rosidl_typesupport_introspection_c__ConnectedClients_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

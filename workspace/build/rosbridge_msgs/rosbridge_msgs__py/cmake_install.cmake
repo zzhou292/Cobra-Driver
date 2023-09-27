@@ -1,8 +1,8 @@
-# Install script for directory: /home/sbel/Desktop/Cobra-Driver/workspace/build/rosbridge_msgs/rosbridge_msgs__py
+# Install script for directory: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs/rosbridge_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbel/Desktop/Cobra-Driver/workspace/install/rosbridge_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,10 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

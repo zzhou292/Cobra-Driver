@@ -1,3 +1,3 @@
 import sys
 sys.real_prefix = sys.prefix
-sys.prefix = sys.exec_prefix = '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2'
+sys.prefix = sys.exec_prefix = '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2'

@@ -2,6 +2,7 @@
 // with input from rosapi_msgs:msg/TypeDef.idl
 // generated code does not contain a copyright notice
 #include "rosapi_msgs/msg/detail/type_def__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "rosapi_msgs/msg/detail/type_def__functions.h"
 #include "rosapi_msgs/msg/detail/type_def__struct.hpp"
 
 #include <limits>
@@ -198,6 +199,7 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
 max_serialized_size_TypeDef(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -206,7 +208,9 @@ max_serialized_size_TypeDef(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
 
   // Member: type
@@ -214,6 +218,7 @@ max_serialized_size_TypeDef(
     size_t array_size = 1;
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -225,10 +230,12 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -240,10 +247,12 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -255,6 +264,7 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
@@ -266,10 +276,12 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -281,10 +293,12 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -296,10 +310,12 @@ max_serialized_size_TypeDef(
   {
     size_t array_size = 0;
     full_bounded = false;
+    is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -339,9 +355,18 @@ static uint32_t _TypeDef__get_serialized_size(
   return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
 }
 
-static size_t _TypeDef__max_serialized_size(bool & full_bounded)
+static size_t _TypeDef__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_TypeDef(full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TypeDef(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 static message_type_support_callbacks_t _TypeDef__callbacks = {
@@ -357,6 +382,9 @@ static rosidl_message_type_support_t _TypeDef__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_TypeDef__callbacks,
   get_message_typesupport_handle_function,
+  &rosapi_msgs__msg__TypeDef__get_type_hash,
+  &rosapi_msgs__msg__TypeDef__get_type_description,
+  &rosapi_msgs__msg__TypeDef__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

@@ -2,6 +2,7 @@
 // with input from rosapi_msgs:srv/GetParam.idl
 // generated code does not contain a copyright notice
 #include "rosapi_msgs/srv/detail/get_param__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "rosapi_msgs/srv/detail/get_param__functions.h"
 #include "rosapi_msgs/srv/detail/get_param__struct.hpp"
 
 #include <limits>
@@ -83,6 +84,7 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
 max_serialized_size_GetParam_Request(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -91,7 +93,9 @@ max_serialized_size_GetParam_Request(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
 
   // Member: name
@@ -99,6 +103,7 @@ max_serialized_size_GetParam_Request(
     size_t array_size = 1;
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -111,6 +116,7 @@ max_serialized_size_GetParam_Request(
     size_t array_size = 1;
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -150,9 +156,18 @@ static uint32_t _GetParam_Request__get_serialized_size(
   return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
 }
 
-static size_t _GetParam_Request__max_serialized_size(bool & full_bounded)
+static size_t _GetParam_Request__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_GetParam_Request(full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_GetParam_Request(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 static message_type_support_callbacks_t _GetParam_Request__callbacks = {
@@ -168,6 +183,9 @@ static rosidl_message_type_support_t _GetParam_Request__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_GetParam_Request__callbacks,
   get_message_typesupport_handle_function,
+  &rosapi_msgs__srv__GetParam_Request__get_type_hash,
+  &rosapi_msgs__srv__GetParam_Request__get_type_description,
+  &rosapi_msgs__srv__GetParam_Request__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp
@@ -282,6 +300,7 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
 max_serialized_size_GetParam_Response(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -290,7 +309,9 @@ max_serialized_size_GetParam_Response(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
 
   // Member: value
@@ -298,6 +319,7 @@ max_serialized_size_GetParam_Response(
     size_t array_size = 1;
 
     full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += padding +
         eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -337,9 +359,18 @@ static uint32_t _GetParam_Response__get_serialized_size(
   return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
 }
 
-static size_t _GetParam_Response__max_serialized_size(bool & full_bounded)
+static size_t _GetParam_Response__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_GetParam_Response(full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_GetParam_Response(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 static message_type_support_callbacks_t _GetParam_Response__callbacks = {
@@ -355,6 +386,9 @@ static rosidl_message_type_support_t _GetParam_Response__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_GetParam_Response__callbacks,
   get_message_typesupport_handle_function,
+  &rosapi_msgs__srv__GetParam_Response__get_type_hash,
+  &rosapi_msgs__srv__GetParam_Response__get_type_description,
+  &rosapi_msgs__srv__GetParam_Response__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp
@@ -390,7 +424,366 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cp
 }
 #endif
 
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+namespace service_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const service_msgs::msg::ServiceEventInfo &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  service_msgs::msg::ServiceEventInfo &);
+size_t get_serialized_size(
+  const service_msgs::msg::ServiceEventInfo &,
+  size_t current_alignment);
+size_t
+max_serialized_size_ServiceEventInfo(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace service_msgs
+
+// functions for rosapi_msgs::srv::GetParam_Request already declared above
+
+// functions for rosapi_msgs::srv::GetParam_Response already declared above
+
+
+namespace rosapi_msgs
+{
+
+namespace srv
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
+cdr_serialize(
+  const rosapi_msgs::srv::GetParam_Event & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: info
+  service_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.info,
+    cdr);
+  // Member: request
+  {
+    size_t size = ros_message.request.size();
+    if (size > 1) {
+      throw std::runtime_error("array size exceeds upper bound");
+    }
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      rosapi_msgs::srv::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.request[i],
+        cdr);
+    }
+  }
+  // Member: response
+  {
+    size_t size = ros_message.response.size();
+    if (size > 1) {
+      throw std::runtime_error("array size exceeds upper bound");
+    }
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      rosapi_msgs::srv::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.response[i],
+        cdr);
+    }
+  }
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  rosapi_msgs::srv::GetParam_Event & ros_message)
+{
+  // Member: info
+  service_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.info);
+
+  // Member: request
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.request.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      rosapi_msgs::srv::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.request[i]);
+    }
+  }
+
+  // Member: response
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.response.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      rosapi_msgs::srv::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.response[i]);
+    }
+  }
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
+get_serialized_size(
+  const rosapi_msgs::srv::GetParam_Event & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: info
+
+  current_alignment +=
+    service_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.info, current_alignment);
+  // Member: request
+  {
+    size_t array_size = ros_message.request.size();
+    if (array_size > 1) {
+      throw std::runtime_error("array size exceeds upper bound");
+    }
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        rosapi_msgs::srv::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.request[index], current_alignment);
+    }
+  }
+  // Member: response
+  {
+    size_t array_size = ros_message.response.size();
+    if (array_size > 1) {
+      throw std::runtime_error("array size exceeds upper bound");
+    }
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        rosapi_msgs::srv::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.response[index], current_alignment);
+    }
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosapi_msgs
+max_serialized_size_GetParam_Event(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: info
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        service_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_ServiceEventInfo(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: request
+  {
+    size_t array_size = 1;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        rosapi_msgs::srv::typesupport_fastrtps_cpp::max_serialized_size_GetParam_Request(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: response
+  {
+    size_t array_size = 1;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        rosapi_msgs::srv::typesupport_fastrtps_cpp::max_serialized_size_GetParam_Response(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+static bool _GetParam_Event__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const rosapi_msgs::srv::GetParam_Event *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _GetParam_Event__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<rosapi_msgs::srv::GetParam_Event *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _GetParam_Event__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const rosapi_msgs::srv::GetParam_Event *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _GetParam_Event__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_GetParam_Event(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _GetParam_Event__callbacks = {
+  "rosapi_msgs::srv",
+  "GetParam_Event",
+  _GetParam_Event__cdr_serialize,
+  _GetParam_Event__cdr_deserialize,
+  _GetParam_Event__get_serialized_size,
+  _GetParam_Event__max_serialized_size
+};
+
+static rosidl_message_type_support_t _GetParam_Event__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_GetParam_Event__callbacks,
+  get_message_typesupport_handle_function,
+  &rosapi_msgs__srv__GetParam_Event__get_type_hash,
+  &rosapi_msgs__srv__GetParam_Event__get_type_description,
+  &rosapi_msgs__srv__GetParam_Event__get_type_description_sources,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace srv
+
+}  // namespace rosapi_msgs
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_rosapi_msgs
+const rosidl_message_type_support_t *
+get_message_type_support_handle<rosapi_msgs::srv::GetParam_Event>()
+{
+  return &rosapi_msgs::srv::typesupport_fastrtps_cpp::_GetParam_Event__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, rosapi_msgs, srv, GetParam_Event)() {
+  return &rosapi_msgs::srv::typesupport_fastrtps_cpp::_GetParam_Event__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
 #include "rmw/error_handling.h"
+#include "rosidl_typesupport_cpp/service_type_support.hpp"
 // already included above
 // #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/service_type_support.h"
@@ -412,11 +805,28 @@ static service_type_support_callbacks_t _GetParam__callbacks = {
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, rosapi_msgs, srv, GetParam_Response)(),
 };
 
-static rosidl_service_type_support_t _GetParam__handle = {
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+static const rosidl_service_type_support_t _GetParam__handle{
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_GetParam__callbacks,
   get_service_typesupport_handle_function,
+  ::rosidl_typesupport_fastrtps_cpp::get_message_type_support_handle<rosapi_msgs::srv::GetParam_Request>(),
+  ::rosidl_typesupport_fastrtps_cpp::get_message_type_support_handle<rosapi_msgs::srv::GetParam_Response>(),
+  ::rosidl_typesupport_fastrtps_cpp::get_message_type_support_handle<rosapi_msgs::srv::GetParam_Event>(),
+  &::rosidl_typesupport_cpp::service_create_event_message<rosapi_msgs::srv::GetParam>,
+  &::rosidl_typesupport_cpp::service_destroy_event_message<rosapi_msgs::srv::GetParam>,
+  &rosapi_msgs__srv__GetParam__get_type_hash,
+  &rosapi_msgs__srv__GetParam__get_type_description,
+  &rosapi_msgs__srv__GetParam__get_type_description_sources,
 };
+
+#ifdef __cplusplus
+}
+#endif
 
 }  // namespace typesupport_fastrtps_cpp
 

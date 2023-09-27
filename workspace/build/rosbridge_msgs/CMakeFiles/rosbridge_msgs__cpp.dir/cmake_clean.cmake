@@ -5,11 +5,9 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_client__builder.hpp"
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_client__struct.hpp"
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_client__traits.hpp"
-  "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_client__type_support.hpp"
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_clients__builder.hpp"
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_clients__struct.hpp"
   "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_clients__traits.hpp"
-  "rosidl_generator_cpp/rosbridge_msgs/msg/detail/connected_clients__type_support.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

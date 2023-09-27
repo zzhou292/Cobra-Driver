@@ -2,6 +2,7 @@
 // with input from rosbridge_test_msgs:msg/Num.idl
 // generated code does not contain a copyright notice
 #include "rosbridge_test_msgs/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "rosbridge_test_msgs/msg/detail/num__functions.h"
 #include "rosbridge_test_msgs/msg/detail/num__struct.hpp"
 
 #include <limits>
@@ -76,6 +77,7 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_rosbridge_test_msgs
 max_serialized_size_Num(
   bool & full_bounded,
+  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -84,7 +86,9 @@ max_serialized_size_Num(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-  (void)full_bounded;
+
+  full_bounded = true;
+  is_plain = true;
 
 
   // Member: num
@@ -127,9 +131,18 @@ static uint32_t _Num__get_serialized_size(
   return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
 }
 
-static size_t _Num__max_serialized_size(bool & full_bounded)
+static size_t _Num__max_serialized_size(char & bounds_info)
 {
-  return max_serialized_size_Num(full_bounded, 0);
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_Num(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
 }
 
 static message_type_support_callbacks_t _Num__callbacks = {
@@ -145,6 +158,9 @@ static rosidl_message_type_support_t _Num__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_Num__callbacks,
   get_message_typesupport_handle_function,
+  &rosbridge_test_msgs__msg__Num__get_type_hash,
+  &rosbridge_test_msgs__msg__Num__get_type_description,
+  &rosbridge_test_msgs__msg__Num__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp
