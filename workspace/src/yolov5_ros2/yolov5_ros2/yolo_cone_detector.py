@@ -1,76 +1,78 @@
-import os
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-import socket
+import onnxruntime as ort
 import cv2
 import numpy as np
-import onnxruntime as ort
 
 class YOLOv5Detector(Node):
+
     def __init__(self):
         super().__init__('yolov5_detector')
+        
+        # Initialize cv_bridge
         self.bridge = CvBridge()
 
-        # Load custom ONNX model using ONNX Runtime
-        model_path = os.path.join("/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2/yolov5_ros2", 'real.onnx')
-        self.ort_session = ort.InferenceSession(model_path, providers=['CPUExecutionProvider'])
+        # Load the ONNX model
+        self.ort_session = ort.InferenceSession("/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/yolov5_ros2/yolov5_ros2/real.onnx",providers=["CUDAExecutionProvider"])
 
+        # Create subscription to the raw image topic
         self.subscription = self.create_subscription(
             Image,
             'image_raw',
             self.listener_callback,
             10)
-        self.subscription  # prevent unused variable warning
-        self.publisher_ = self.create_publisher(Image, '/yolo/detections', 10)
-
-        # TCP Configuration
-        self.tcp_ip = "127.0.0.1"  # Modify IP address if needed
-        self.tcp_port = 1212
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.connect((self.tcp_ip, self.tcp_port))
+        self.subscription
 
     def listener_callback(self, msg):
+        # Convert ROS Image message to OpenCV image
         cv_img = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        
+        
 
-        # Resize the image to 1280x704
-        cv_img = cv2.resize(cv_img, (1280, 704))
+        # Ensure image is 1280x704
+        cv_img_resized = cv2.resize(cv_img, (1280, 704))
+        
+        cv_img_resized_rgb = cv2.cvtColor(cv_img_resized, cv2.COLOR_BGR2RGB)
+        
+        # Convert image to NCHW format and normalize to [0,1]
+        img_tensor = np.transpose(cv_img_resized_rgb, (2, 0, 1)).astype(np.float16) / 255.0
+        # Reshape the tensor to correct its shape
+        img_tensor = img_tensor.reshape(1, 3, 704, 1280).astype(np.float16)
 
-        # Convert the image to a tensor format suitable for ONNX Runtime
-        tensor_img = cv_img.transpose(2, 0, 1)  # Change from HWC to CHW
-        tensor_img = tensor_img.astype('float32') / 255.0
-        tensor_img = tensor_img[np.newaxis, :]  # Add a batch dimension
-        tensor_img = tensor_img.astype('float16')  # Convert to float16
-        ort_inputs = {self.ort_session.get_inputs()[0].name: tensor_img}
-        results = self.ort_session.run(None, ort_inputs)
+        
+        print(img_tensor.shape)
+        
+        # Perform inference
+        ort_inputs = {self.ort_session.get_inputs()[0].name: img_tensor}
+        detections = self.ort_session.run(None, ort_inputs)[0]
+        
+        print("Detections shape:", detections.shape)
+        print("Sample detection values:", detections[0])
 
-        # Depending on your ONNX model's output, adjust this section
-        if len(results[0][0].shape) == 2:  # Grayscale
-            results_img = results[0][0].astype(np.float32)
-            results_img = cv2.cvtColor(results_img, cv2.COLOR_GRAY2BGR)
-        elif len(results[0][0].shape) == 3:  # Color
-            results_img = results[0][0].astype(np.float32).transpose(1, 2, 0)
-        else:
-            raise ValueError("Unexpected output shape from the model.")
+        # Process and visualize detections
+        for det in detections[0]:  # Assuming detections shape is something like (1, num_detections, num_values_per_detection)
 
-        # Convert back to ROS image and publish
-        results_img = (results_img * 255).clip(0, 255).astype(np.uint8)
-        img_msg = self.bridge.cv2_to_imgmsg(results_img, "bgr8")
-        self.publisher_.publish(img_msg)
+            # Extract bounding box details
+            x_center, y_center, width, height, confidence = det[:5]
+            class_probs = det[5:]
+            class_id = np.argmax(class_probs)
+            class_score = class_probs[class_id]
+        
 
-        # Send the image data through TCP
-        img_data = cv2.imencode('.jpg', results_img)[1].tobytes()
-        length = len(img_data)
-        try:
-            self.sock.sendall(length.to_bytes(4, byteorder='big'))
-            self.sock.sendall(img_data)
-        except:
-            print("Failed to send data over TCP. Check the connection.")
+            if confidence * class_score > 0.5:  # Adjust the threshold if necessary
+                x1 = int(x_center - width / 2)
+                y1 = int(y_center - height / 2)
+                x2 = int(x_center + width / 2)
+                y2 = int(y_center + height / 2)
 
-    def __del__(self):
-        if hasattr(self, 'sock') and self.sock:
-            self.sock.close()
+                cv2.rectangle(cv_img_resized, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.putText(cv_img_resized, f"Class {class_id} {confidence * class_score:.2f}", (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)
+
+        # Display the image with detections
+        cv2.imshow("Detections", cv_img_resized)
+        cv2.waitKey(1)
 
 def main(args=None):
     rclpy.init(args=args)
