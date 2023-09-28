@@ -4,12 +4,8 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='rosapi',
-            executable='rosapi_node'
-        ),
-        Node(
-            package='rosbridge_server',
-            executable='rosbridge_websocket.py'
+            package='tcp_cam_sender',
+            executable='tcp_cam_sender'
         ),
         Node(
             package='usb_cam',

@@ -9,18 +9,25 @@ class TCPSender(Node):
     def __init__(self):
         super().__init__('tcp_sender')
 
+        print("tp1")
+
         # TCP configuration
-        self.tcp_ip = self.declare_parameter("tcp_ip", "127.0.0.1").value
-        self.tcp_port = self.declare_parameter("tcp_port", 12345).value
+        self.tcp_ip = self.declare_parameter("tcp_ip", "0.0.0.0").value
+        self.tcp_port = self.declare_parameter("tcp_port", 1210).value
+        print("tp1.5")
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        print("tp1.6")
         self.sock.connect((self.tcp_ip, self.tcp_port))
 
+        print("tp1.7")
         # Subscription to compressed image topic
         self.subscription = self.create_subscription(
             CompressedImage,
             "/image_raw/compressed",
             self.callback,
             10)
+
+        print("tp2")
 
     def callback(self, msg):
         # First, send the length of the image data
