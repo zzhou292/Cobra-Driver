@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'yolo_detector = yolov5_ros2.yolo_detector:main',
+            'yolo_cone_detector = yolov5_ros2.yolo_cone_detector:main'
             ],
     },
 )
