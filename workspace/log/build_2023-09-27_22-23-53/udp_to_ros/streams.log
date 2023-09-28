@@ -1,0 +1,34 @@
+[3.527s] Invoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed
+[4.014s] running egg_info
+[4.045s] writing ../../build/udp_to_ros/udp_to_ros.egg-info/PKG-INFO
+[4.047s] writing dependency_links to ../../build/udp_to_ros/udp_to_ros.egg-info/dependency_links.txt
+[4.050s] writing entry points to ../../build/udp_to_ros/udp_to_ros.egg-info/entry_points.txt
+[4.050s] writing requirements to ../../build/udp_to_ros/udp_to_ros.egg-info/requires.txt
+[4.051s] writing top-level names to ../../build/udp_to_ros/udp_to_ros.egg-info/top_level.txt
+[4.320s] reading manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[4.322s] writing manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[4.322s] running build
+[4.322s] running build_py
+[4.323s] running install
+[4.327s] /home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[4.327s] !!
+[4.327s] 
+[4.327s]         ********************************************************************************
+[4.327s]         Please avoid running ``setup.py`` directly.
+[4.327s]         Instead, use pypa/build, pypa/installer or other
+[4.327s]         standards-based tools.
+[4.328s] 
+[4.328s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[4.328s]         ********************************************************************************
+[4.328s] 
+[4.328s] !!
+[4.328s]   self.initialize_options()
+[4.334s] running install_lib
+[4.369s] running install_data
+[4.402s] running install_egg_info
+[4.437s] removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages/udp_to_ros-0.0.0-py3.8.egg-info' (and everything under it)
+[4.437s] Copying ../../build/udp_to_ros/udp_to_ros.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages/udp_to_ros-0.0.0-py3.8.egg-info
+[4.440s] running install_scripts
+[4.547s] Installing udp_listener script to /home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/udp_to_ros
+[4.551s] writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log'
+[4.694s] Invoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed

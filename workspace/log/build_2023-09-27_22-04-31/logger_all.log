@@ -1,0 +1,363 @@
+[0.571s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.571s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9d208040>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9d208040>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9d1c5af0>)[0m
+[0.656s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.656s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.656s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.656s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.656s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.657s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.657s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/sbel/Desktop/Cobra-Driver/workspace'
+[0.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.689s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.689s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.689s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.689s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.690s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.690s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.690s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.690s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.691s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.692s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extensions ['ignore', 'ignore_ament_install']
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extension 'ignore'
+[0.693s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extension 'ignore_ament_install'
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extensions ['colcon_pkg']
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extension 'colcon_pkg'
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extensions ['colcon_meta']
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extension 'colcon_meta'
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extensions ['ros']
+[0.694s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/common) by extension 'ros'
+[0.699s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/common' with type 'ros.ament_python' and name 'common'[0m
+[0.699s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['ignore', 'ignore_ament_install']
+[0.699s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'ignore'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'ignore_ament_install'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['colcon_pkg']
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'colcon_pkg'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['colcon_meta']
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'colcon_meta'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['ros']
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'ros'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['cmake', 'python']
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'cmake'
+[0.700s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'python'
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extensions ['python_setup_py']
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rosbridge_suite) by extension 'python_setup_py'
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extensions ['ignore', 'ignore_ament_install']
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extension 'ignore'
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extension 'ignore_ament_install'
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extensions ['colcon_pkg']
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extension 'colcon_pkg'
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extensions ['colcon_meta']
+[0.701s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extension 'colcon_meta'
+[0.702s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extensions ['ros']
+[0.702s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tcp_cam_sender) by extension 'ros'
+[0.703s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/tcp_cam_sender' with type 'ros.ament_python' and name 'tcp_cam_sender'[0m
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extension 'ignore'
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extension 'ignore_ament_install'
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extensions ['colcon_pkg']
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extension 'colcon_pkg'
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extensions ['colcon_meta']
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extension 'colcon_meta'
+[0.704s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extensions ['ros']
+[0.705s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/udp_to_ros) by extension 'ros'
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/udp_to_ros' with type 'ros.ament_python' and name 'udp_to_ros'[0m
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extension 'ignore'
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extension 'colcon_pkg'
+[0.706s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extensions ['colcon_meta']
+[0.707s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extension 'colcon_meta'
+[0.707s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extensions ['ros']
+[0.707s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_cam) by extension 'ros'
+[0.709s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'[0m
+[0.709s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extension 'ignore'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extension 'ignore_ament_install'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extensions ['colcon_pkg']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extension 'colcon_pkg'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extensions ['colcon_meta']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extension 'colcon_meta'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extensions ['ros']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/yolov5_ros2) by extension 'ros'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/yolov5_ros2' with type 'ros.ament_python' and name 'yolov5_ros2'[0m
+[0.712s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.712s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.712s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.712s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.712s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.754s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.754s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.760s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 266 installed packages in /opt/ros/foxy[0m
+[0.763s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.903s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_args' from command line to 'None'
+[0.903s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_target' from command line to 'None'
+[0.903s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_clean_first' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'cmake_force_configure' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'ament_cmake_args' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbel/Desktop/Cobra-Driver/workspace/build/common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbel/Desktop/Cobra-Driver/workspace/install/common', 'merge_install': False, 'path': '/home/sbel/Desktop/Cobra-Driver/workspace/src/common', 'symlink_install': False, 'test_result_base': None}[0m
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_args' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_target' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_clean_cache' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_clean_first' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'cmake_force_configure' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'ament_cmake_args' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'catkin_cmake_args' from command line to 'None'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tcp_cam_sender' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'tcp_cam_sender' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender', 'merge_install': False, 'path': '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender', 'symlink_install': False, 'test_result_base': None}[0m
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_target' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'udp_to_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'udp_to_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros', 'merge_install': False, 'path': '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros', 'symlink_install': False, 'test_result_base': None}[0m
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.911s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam', 'merge_install': False, 'path': '/home/sbel/Desktop/Cobra-Driver/workspace/src/usb_cam', 'symlink_install': False, 'test_result_base': None}[0m
+[0.913s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_args' from command line to 'None'
+[0.913s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_target' from command line to 'None'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'yolov5_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.914s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'yolov5_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2', 'merge_install': False, 'path': '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2', 'symlink_install': False, 'test_result_base': None}[0m
+[0.915s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.923s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.924s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common' with build type 'ament_python'
+[0.925s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('common', 'ament_prefix_path')
+[0.933s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.933s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/ament_prefix_path.ps1'
+[0.935s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/ament_prefix_path.dsv'
+[0.937s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/ament_prefix_path.sh'
+[0.942s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.942s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.957s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender' with build type 'ament_python'
+[0.958s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tcp_cam_sender', 'ament_prefix_path')
+[0.962s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/ament_prefix_path.ps1'
+[0.964s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/ament_prefix_path.dsv'
+[0.966s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/ament_prefix_path.sh'
+[0.970s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.970s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.981s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros' with build type 'ament_python'
+[0.981s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('udp_to_ros', 'ament_prefix_path')
+[0.985s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/ament_prefix_path.ps1'
+[0.986s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/ament_prefix_path.dsv'
+[0.987s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/ament_prefix_path.sh'
+[0.991s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.991s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.004s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/usb_cam' with build type 'ament_cmake'
+[1.004s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/usb_cam'
+[1.008s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.008s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.021s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2' with build type 'ament_python'
+[1.022s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('yolov5_ros2', 'ament_prefix_path')
+[1.025s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.ps1'
+[1.027s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.dsv'
+[1.028s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.sh'
+[1.031s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.031s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.484s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common'
+[1.489s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.489s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.929s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender'
+[1.935s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.935s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.382s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros'
+[2.388s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.389s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.424s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam -- -j8 -l8[0m
+[2.866s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2'
+[2.871s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.871s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.895s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam -- -j8 -l8[0m
+[3.003s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam[0m
+[3.045s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(usb_cam)
+[3.046s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam[0m
+[3.063s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam' for CMake module files
+[3.065s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam' for CMake config files
+[3.065s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_cam', 'cmake_prefix_path')
+[3.069s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[3.071s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[3.074s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[3.076s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib'
+[3.077s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_cam', 'ld_library_path_lib')
+[3.080s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[3.081s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[3.083s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[3.084s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/bin'
+[3.084s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[3.084s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/python3.8/site-packages'
+[3.085s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/bin'
+[3.088s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.ps1'
+[3.091s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.dsv'
+[3.093s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.sh'
+[3.095s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.bash'
+[3.098s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.zsh'
+[3.100s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/colcon-core/packages/usb_cam)
+[3.178s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(usb_cam)
+[3.183s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam' for CMake module files
+[3.184s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam' for CMake config files
+[3.185s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_cam', 'cmake_prefix_path')
+[3.188s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[3.190s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[3.193s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[3.195s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib'
+[3.195s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_cam', 'ld_library_path_lib')
+[3.199s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[3.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[3.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[3.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/bin'
+[3.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[3.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/python3.8/site-packages'
+[3.204s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/bin'
+[3.207s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.ps1'
+[3.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.dsv'
+[3.210s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.sh'
+[3.211s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.bash'
+[3.212s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.zsh'
+[3.213s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/colcon-core/packages/usb_cam)
+[4.390s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/common/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/common build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/common/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log --single-version-externally-managed[0m
+[4.404s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed[0m
+[4.420s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tcp_cam_sender build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/install.log --single-version-externally-managed[0m
+[4.433s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/install.log --single-version-externally-managed[0m
+[5.565s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common' for CMake module files
+[5.567s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/common' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/common/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/common build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/common/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log --single-version-externally-managed[0m
+[5.568s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common' for CMake config files
+[5.570s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib'
+[5.570s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/bin'
+[5.571s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/pkgconfig/common.pc'
+[5.571s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages'
+[5.571s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('common', 'pythonpath')
+[5.575s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/pythonpath.ps1'
+[5.578s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/pythonpath.dsv'
+[5.581s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/hook/pythonpath.sh'
+[5.583s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/bin'
+[5.583s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(common)
+[5.588s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/package.ps1'
+[5.590s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/package.dsv'
+[5.591s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/package.sh'
+[5.592s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/package.bash'
+[5.593s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/common/package.zsh'
+[5.593s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/common/share/colcon-core/packages/common)
+[5.601s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros' for CMake module files
+[5.604s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed[0m
+[5.604s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros' for CMake config files
+[5.606s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib'
+[5.606s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/bin'
+[5.606s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/pkgconfig/udp_to_ros.pc'
+[5.607s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages'
+[5.607s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('udp_to_ros', 'pythonpath')
+[5.610s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/pythonpath.ps1'
+[5.611s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/pythonpath.dsv'
+[5.612s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/hook/pythonpath.sh'
+[5.613s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/bin'
+[5.614s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(udp_to_ros)
+[5.617s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/package.ps1'
+[5.618s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/package.dsv'
+[5.619s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/package.sh'
+[5.620s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/package.bash'
+[5.620s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/udp_to_ros/package.zsh'
+[5.621s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/share/colcon-core/packages/udp_to_ros)
+[5.628s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2' for CMake module files
+[5.629s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/install.log --single-version-externally-managed[0m
+[5.629s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2' for CMake config files
+[5.631s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib'
+[5.631s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/bin'
+[5.631s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/pkgconfig/yolov5_ros2.pc'
+[5.631s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages'
+[5.632s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('yolov5_ros2', 'pythonpath')
+[5.634s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.ps1'
+[5.635s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.dsv'
+[5.636s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.sh'
+[5.637s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/bin'
+[5.637s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(yolov5_ros2)
+[5.640s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/package.ps1'
+[5.641s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/package.dsv'
+[5.641s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/package.sh'
+[5.642s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/package.bash'
+[5.643s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/yolov5_ros2/package.zsh'
+[5.643s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/share/colcon-core/packages/yolov5_ros2)
+[5.648s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender' for CMake module files
+[5.649s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender' for CMake config files
+[5.650s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender' returned '0': PYTHONPATH=/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tcp_cam_sender build --build-base /home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/build install --record /home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/install.log --single-version-externally-managed[0m
+[5.651s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib'
+[5.651s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/bin'
+[5.651s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/pkgconfig/tcp_cam_sender.pc'
+[5.652s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages'
+[5.652s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tcp_cam_sender', 'pythonpath')
+[5.654s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/pythonpath.ps1'
+[5.655s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/pythonpath.dsv'
+[5.656s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/hook/pythonpath.sh'
+[5.657s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/bin'
+[5.657s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(tcp_cam_sender)
+[5.660s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/package.ps1'
+[5.661s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/package.dsv'
+[5.661s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/package.sh'
+[5.662s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/package.bash'
+[5.663s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/tcp_cam_sender/package.zsh'
+[5.663s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/share/colcon-core/packages/tcp_cam_sender)
+[5.664s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[5.665s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[5.665s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[5.666s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[5.678s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.678s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.678s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[5.707s] [34mcolcon.colcon_notification.desktop_notification.notify2[0m [1;30mDEBUG[0m [32mFailed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1[0m
+[5.708s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[5.711s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/sbel/Desktop/Cobra-Driver/workspace/install/local_setup.ps1'
+[5.714s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/sbel/Desktop/Cobra-Driver/workspace/install/_local_setup_util_ps1.py'
+[5.718s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/sbel/Desktop/Cobra-Driver/workspace/install/setup.ps1'
+[5.720s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/sbel/Desktop/Cobra-Driver/workspace/install/local_setup.sh'
+[5.721s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/sbel/Desktop/Cobra-Driver/workspace/install/_local_setup_util_sh.py'
+[5.722s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/sbel/Desktop/Cobra-Driver/workspace/install/setup.sh'
+[5.725s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/sbel/Desktop/Cobra-Driver/workspace/install/local_setup.bash'
+[5.726s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/sbel/Desktop/Cobra-Driver/workspace/install/setup.bash'
+[5.730s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/sbel/Desktop/Cobra-Driver/workspace/install/local_setup.zsh'
+[5.731s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/sbel/Desktop/Cobra-Driver/workspace/install/setup.zsh'

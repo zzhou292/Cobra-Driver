@@ -1,0 +1,3 @@
+[console_scripts]
+yolo_cone_detector = yolov5_ros2.yolo_cone_detector:main
+yolo_detector = yolov5_ros2.yolo_detector:main

@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.000950] (common) JobQueued: {'identifier': 'common', 'dependencies': OrderedDict()}
+[0.001188] (tcp_cam_sender) JobQueued: {'identifier': 'tcp_cam_sender', 'dependencies': OrderedDict()}
+[0.001773] (udp_to_ros) JobQueued: {'identifier': 'udp_to_ros', 'dependencies': OrderedDict()}
+[0.002146] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.002689] (yolov5_ros2) JobQueued: {'identifier': 'yolov5_ros2', 'dependencies': OrderedDict()}
+[0.002802] (common) JobStarted: {'identifier': 'common'}
+[0.036057] (tcp_cam_sender) JobStarted: {'identifier': 'tcp_cam_sender'}
+[0.067384] (udp_to_ros) JobStarted: {'identifier': 'udp_to_ros'}
+[0.095579] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.099673] (-) TimerEvent: {}
+[0.117026] (yolov5_ros2) JobStarted: {'identifier': 'yolov5_ros2'}
+[0.199976] (-) TimerEvent: {}
+[0.301109] (-) TimerEvent: {}
+[0.402468] (-) TimerEvent: {}
+[0.503412] (-) TimerEvent: {}
+[0.609272] (-) TimerEvent: {}
+[0.711728] (-) TimerEvent: {}
+[0.812899] (-) TimerEvent: {}
+[0.913907] (-) TimerEvent: {}
+[1.015088] (-) TimerEvent: {}
+[1.116355] (-) TimerEvent: {}
+[1.217714] (-) TimerEvent: {}
+[1.318612] (-) TimerEvent: {}
+[1.419537] (-) TimerEvent: {}
+[1.520534] (-) TimerEvent: {}
+[1.561408] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[1.563393] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[1.565331] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam', '--', '-j8', '-l8'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sbel'), ('SSH_CLIENT', '128.104.190.187 47708 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sbel'), ('OLDPWD', '/home/sbel/Desktop/Cobra-Driver'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sbel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '128.104.190.187 47708 10.141.147.137 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy')]), 'shell': False}
+[1.620922] (-) TimerEvent: {}
+[1.722298] (-) TimerEvent: {}
+[1.823294] (-) TimerEvent: {}
+[1.924205] (-) TimerEvent: {}
+[2.025095] (-) TimerEvent: {}
+[2.064823] (usb_cam) StdoutLine: {'line': b'[ 66%] Built target usb_cam_node_exe\n'}
+[2.066996] (usb_cam) StdoutLine: {'line': b'[ 66%] Built target usb_cam\n'}
+[2.068182] (usb_cam) StdoutLine: {'line': b'[100%] Built target usb_cam_node\n'}
+[2.071508] (usb_cam) CommandEnded: {'returncode': 0}
+[2.125848] (-) TimerEvent: {}
+[2.145335] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'install'}
+[2.184007] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sbel'), ('SSH_CLIENT', '128.104.190.187 47708 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sbel'), ('OLDPWD', '/home/sbel/Desktop/Cobra-Driver'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sbel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/sbel/Desktop/Cobra-Driver/workspace/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '128.104.190.187 47708 10.141.147.137 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy')]), 'shell': False}
+[2.217255] (usb_cam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.218441] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/usb_cam/usb_cam_node_exe\n'}
+[2.218820] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/usb_cam/show_image.py\n'}
+[2.219135] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/include\n'}
+[2.219368] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/include/usb_cam\n'}
+[2.219543] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam.hpp\n'}
+[2.219682] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam_node.hpp\n'}
+[2.219851] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam_utils.hpp\n'}
+[2.219989] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/library_path.sh\n'}
+[2.220205] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/library_path.dsv\n'}
+[2.220409] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam.so\n'}
+[2.220546] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam_node.so\n'}
+[2.220836] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/launch\n'}
+[2.221102] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/launch/demo_launch.py\n'}
+[2.221320] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config\n'}
+[2.221583] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config/camera_info.yaml\n'}
+[2.221820] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config/params.yaml\n'}
+[2.222008] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam\n'}
+[2.222176] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam\n'}
+[2.222424] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh\n'}
+[2.222558] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv\n'}
+[2.222684] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/path.sh\n'}
+[2.222811] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/path.dsv\n'}
+[2.222971] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.bash\n'}
+[2.223180] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.sh\n'}
+[2.223347] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.zsh\n'}
+[2.223519] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.dsv\n'}
+[2.223848] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.dsv\n'}
+[2.223999] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/packages/usb_cam\n'}
+[2.224134] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam\n'}
+[2.224260] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.224386] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.224512] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.224634] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake\n'}
+[2.224755] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake\n'}
+[2.224873] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.xml\n'}
+[2.225852] (-) TimerEvent: {}
+[2.235327] (usb_cam) CommandEnded: {'returncode': 0}
+[2.326170] (-) TimerEvent: {}
+[2.406819] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 0}
+[2.426285] (-) TimerEvent: {}
+[2.527178] (-) TimerEvent: {}
+[2.628122] (-) TimerEvent: {}
+[2.735136] (-) TimerEvent: {}
+[2.836060] (-) TimerEvent: {}
+[2.937007] (-) TimerEvent: {}
+[3.037956] (-) TimerEvent: {}
+[3.138908] (-) TimerEvent: {}
+[3.239861] (-) TimerEvent: {}
+[3.340913] (-) TimerEvent: {}
+[3.442030] (-) TimerEvent: {}
+[3.543249] (-) TimerEvent: {}
+[3.548009] (common) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/common', 'build', '--build-base', '/home/sbel/Desktop/Cobra-Driver/workspace/build/common/build', 'install', '--record', '/home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log', '--single-version-externally-managed'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/src/common', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbel', 'SSH_CLIENT': '128.104.190.187 47708 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sbel', 'OLDPWD': '/home/sbel/Desktop/Cobra-Driver', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'sbel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sbel/Desktop/Cobra-Driver/workspace/build/common', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.104.190.187 47708 10.141.147.137 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbel/Desktop/Cobra-Driver/workspace/build/common/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam'}, 'shell': False}
+[3.565767] (tcp_cam_sender) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tcp_cam_sender', 'build', '--build-base', '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/build', 'install', '--record', '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/install.log', '--single-version-externally-managed'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/src/tcp_cam_sender', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbel', 'SSH_CLIENT': '128.104.190.187 47708 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sbel', 'OLDPWD': '/home/sbel/Desktop/Cobra-Driver', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'sbel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.104.190.187 47708 10.141.147.137 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam'}, 'shell': False}
+[3.583203] (udp_to_ros) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/udp_to_ros', 'build', '--build-base', '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/build', 'install', '--record', '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log', '--single-version-externally-managed'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/src/udp_to_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbel', 'SSH_CLIENT': '128.104.190.187 47708 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sbel', 'OLDPWD': '/home/sbel/Desktop/Cobra-Driver', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'sbel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.104.190.187 47708 10.141.147.137 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam'}, 'shell': False}
+[3.602843] (yolov5_ros2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/yolov5_ros2', 'build', '--build-base', '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/build', 'install', '--record', '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/install.log', '--single-version-externally-managed'], 'cwd': '/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbel', 'SSH_CLIENT': '128.104.190.187 47708 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sbel', 'OLDPWD': '/home/sbel/Desktop/Cobra-Driver', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'sbel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sbel/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2:/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender:/home/sbel/Desktop/Cobra-Driver/workspace/install/common:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.104.190.187 47708 10.141.147.137 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/prefix_override:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages:/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sbel/Desktop/Cobra-Driver/workspace/install/usb_cam'}, 'shell': False}
+[3.643447] (-) TimerEvent: {}
+[3.744464] (-) TimerEvent: {}
+[3.845356] (-) TimerEvent: {}
+[3.946416] (-) TimerEvent: {}
+[4.047361] (-) TimerEvent: {}
+[4.071483] (common) StdoutLine: {'line': b'running egg_info\n'}
+[4.074573] (tcp_cam_sender) StdoutLine: {'line': b'running egg_info\n'}
+[4.090365] (udp_to_ros) StdoutLine: {'line': b'running egg_info\n'}
+[4.104328] (yolov5_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[4.107085] (common) StdoutLine: {'line': b'writing ../../build/common/common.egg-info/PKG-INFO\n'}
+[4.107579] (tcp_cam_sender) StdoutLine: {'line': b'writing ../../build/tcp_cam_sender/tcp_cam_sender.egg-info/PKG-INFO\n'}
+[4.108957] (common) StdoutLine: {'line': b'writing dependency_links to ../../build/common/common.egg-info/dependency_links.txt\n'}
+[4.109238] (tcp_cam_sender) StdoutLine: {'line': b'writing dependency_links to ../../build/tcp_cam_sender/tcp_cam_sender.egg-info/dependency_links.txt\n'}
+[4.109816] (tcp_cam_sender) StdoutLine: {'line': b'writing entry points to ../../build/tcp_cam_sender/tcp_cam_sender.egg-info/entry_points.txt\n'}
+[4.110300] (tcp_cam_sender) StdoutLine: {'line': b'writing requirements to ../../build/tcp_cam_sender/tcp_cam_sender.egg-info/requires.txt\n'}
+[4.110634] (tcp_cam_sender) StdoutLine: {'line': b'writing top-level names to ../../build/tcp_cam_sender/tcp_cam_sender.egg-info/top_level.txt\n'}
+[4.110913] (common) StdoutLine: {'line': b'writing requirements to ../../build/common/common.egg-info/requires.txt\n'}
+[4.111320] (common) StdoutLine: {'line': b'writing top-level names to ../../build/common/common.egg-info/top_level.txt\n'}
+[4.123935] (udp_to_ros) StdoutLine: {'line': b'writing ../../build/udp_to_ros/udp_to_ros.egg-info/PKG-INFO\n'}
+[4.126500] (udp_to_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/udp_to_ros/udp_to_ros.egg-info/dependency_links.txt\n'}
+[4.127999] (udp_to_ros) StdoutLine: {'line': b'writing entry points to ../../build/udp_to_ros/udp_to_ros.egg-info/entry_points.txt\n'}
+[4.128361] (udp_to_ros) StdoutLine: {'line': b'writing requirements to ../../build/udp_to_ros/udp_to_ros.egg-info/requires.txt\n'}
+[4.128525] (udp_to_ros) StdoutLine: {'line': b'writing top-level names to ../../build/udp_to_ros/udp_to_ros.egg-info/top_level.txt\n'}
+[4.137323] (yolov5_ros2) StdoutLine: {'line': b'writing ../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO\n'}
+[4.139209] (yolov5_ros2) StdoutLine: {'line': b'writing dependency_links to ../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt\n'}
+[4.139767] (yolov5_ros2) StdoutLine: {'line': b'writing entry points to ../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt\n'}
+[4.140237] (yolov5_ros2) StdoutLine: {'line': b'writing requirements to ../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt\n'}
+[4.140520] (yolov5_ros2) StdoutLine: {'line': b'writing top-level names to ../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt\n'}
+[4.147420] (-) TimerEvent: {}
+[4.248199] (-) TimerEvent: {}
+[4.349581] (-) TimerEvent: {}
+[4.387589] (common) StdoutLine: {'line': b"reading manifest file '../../build/common/common.egg-info/SOURCES.txt'\n"}
+[4.389397] (common) StdoutLine: {'line': b"writing manifest file '../../build/common/common.egg-info/SOURCES.txt'\n"}
+[4.390144] (common) StdoutLine: {'line': b'running build\n'}
+[4.390440] (common) StdoutLine: {'line': b'running build_py\n'}
+[4.393395] (common) StdoutLine: {'line': b'running install\n'}
+[4.395228] (common) StderrLine: {'line': b'/home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[4.396509] (common) StderrLine: {'line': b'!!\n'}
+[4.397340] (common) StderrLine: {'line': b'\n'}
+[4.398508] (common) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.399361] (common) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[4.400253] (common) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.401127] (common) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.401915] (common) StderrLine: {'line': b'\n'}
+[4.402678] (common) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[4.403436] (common) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.404344] (common) StderrLine: {'line': b'\n'}
+[4.405105] (common) StderrLine: {'line': b'!!\n'}
+[4.405880] (common) StderrLine: {'line': b'  self.initialize_options()\n'}
+[4.407292] (tcp_cam_sender) StdoutLine: {'line': b"reading manifest file '../../build/tcp_cam_sender/tcp_cam_sender.egg-info/SOURCES.txt'\n"}
+[4.408312] (tcp_cam_sender) StdoutLine: {'line': b"writing manifest file '../../build/tcp_cam_sender/tcp_cam_sender.egg-info/SOURCES.txt'\n"}
+[4.409329] (tcp_cam_sender) StdoutLine: {'line': b'running build\n'}
+[4.410464] (tcp_cam_sender) StdoutLine: {'line': b'running build_py\n'}
+[4.411751] (tcp_cam_sender) StdoutLine: {'line': b'running install\n'}
+[4.413989] (tcp_cam_sender) StderrLine: {'line': b'/home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[4.415008] (tcp_cam_sender) StderrLine: {'line': b'!!\n'}
+[4.415844] (tcp_cam_sender) StderrLine: {'line': b'\n'}
+[4.416656] (tcp_cam_sender) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.417496] (tcp_cam_sender) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[4.418331] (tcp_cam_sender) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.419265] (tcp_cam_sender) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.420087] (tcp_cam_sender) StderrLine: {'line': b'\n'}
+[4.420873] (tcp_cam_sender) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[4.421744] (tcp_cam_sender) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.422583] (tcp_cam_sender) StderrLine: {'line': b'\n'}
+[4.423392] (tcp_cam_sender) StderrLine: {'line': b'!!\n'}
+[4.424263] (tcp_cam_sender) StderrLine: {'line': b'  self.initialize_options()\n'}
+[4.424777] (udp_to_ros) StdoutLine: {'line': b"reading manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'\n"}
+[4.424992] (udp_to_ros) StdoutLine: {'line': b"writing manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'\n"}
+[4.425133] (common) StdoutLine: {'line': b'running install_lib\n'}
+[4.425294] (udp_to_ros) StdoutLine: {'line': b'running build\n'}
+[4.425514] (udp_to_ros) StdoutLine: {'line': b'running build_py\n'}
+[4.425657] (yolov5_ros2) StdoutLine: {'line': b"reading manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'\n"}
+[4.425818] (udp_to_ros) StdoutLine: {'line': b'running install\n'}
+[4.425942] (udp_to_ros) StderrLine: {'line': b'/home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[4.426148] (udp_to_ros) StderrLine: {'line': b'!!\n'}
+[4.426279] (udp_to_ros) StderrLine: {'line': b'\n'}
+[4.426403] (udp_to_ros) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.426527] (udp_to_ros) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[4.426648] (udp_to_ros) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.426766] (udp_to_ros) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.426882] (udp_to_ros) StderrLine: {'line': b'\n'}
+[4.426995] (udp_to_ros) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[4.427115] (udp_to_ros) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.427231] (udp_to_ros) StderrLine: {'line': b'\n'}
+[4.427342] (udp_to_ros) StderrLine: {'line': b'!!\n'}
+[4.427455] (udp_to_ros) StderrLine: {'line': b'  self.initialize_options()\n'}
+[4.427572] (yolov5_ros2) StdoutLine: {'line': b"writing manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'\n"}
+[4.427707] (yolov5_ros2) StdoutLine: {'line': b'running build\n'}
+[4.427825] (yolov5_ros2) StdoutLine: {'line': b'running build_py\n'}
+[4.427944] (yolov5_ros2) StdoutLine: {'line': b'copying yolov5_ros2/yolo_detector.py -> /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/build/lib/yolov5_ros2\n'}
+[4.428072] (yolov5_ros2) StdoutLine: {'line': b'running install\n'}
+[4.428193] (tcp_cam_sender) StdoutLine: {'line': b'running install_lib\n'}
+[4.428328] (yolov5_ros2) StderrLine: {'line': b'/home/sbel/.local/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[4.428513] (yolov5_ros2) StderrLine: {'line': b'!!\n'}
+[4.428632] (yolov5_ros2) StderrLine: {'line': b'\n'}
+[4.428751] (yolov5_ros2) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.428869] (yolov5_ros2) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[4.428983] (yolov5_ros2) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[4.429094] (yolov5_ros2) StderrLine: {'line': b'        standards-based tools.\n'}
+[4.429206] (yolov5_ros2) StderrLine: {'line': b'\n'}
+[4.429317] (yolov5_ros2) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[4.429436] (yolov5_ros2) StderrLine: {'line': b'        ********************************************************************************\n'}
+[4.429590] (yolov5_ros2) StderrLine: {'line': b'\n'}
+[4.429711] (yolov5_ros2) StderrLine: {'line': b'!!\n'}
+[4.429826] (yolov5_ros2) StderrLine: {'line': b'  self.initialize_options()\n'}
+[4.429942] (udp_to_ros) StdoutLine: {'line': b'running install_lib\n'}
+[4.430080] (yolov5_ros2) StdoutLine: {'line': b'running install_lib\n'}
+[4.443425] (common) StdoutLine: {'line': b'running install_data\n'}
+[4.449633] (-) TimerEvent: {}
+[4.450536] (tcp_cam_sender) StdoutLine: {'line': b'running install_data\n'}
+[4.453322] (udp_to_ros) StdoutLine: {'line': b'running install_data\n'}
+[4.457617] (yolov5_ros2) StdoutLine: {'line': b'copying /home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/build/lib/yolov5_ros2/yolo_detector.py -> /home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2\n'}
+[4.459515] (yolov5_ros2) StdoutLine: {'line': b'byte-compiling /home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2/yolo_detector.py to yolo_detector.cpython-38.pyc\n'}
+[4.461553] (yolov5_ros2) StdoutLine: {'line': b'running install_data\n'}
+[4.476495] (common) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.485485] (udp_to_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.485953] (tcp_cam_sender) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.497010] (yolov5_ros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.511768] (common) StdoutLine: {'line': b"removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages/common-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.512713] (common) StdoutLine: {'line': b'Copying ../../build/common/common.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/common/lib/python3.8/site-packages/common-0.0.0-py3.8.egg-info\n'}
+[4.514912] (common) StdoutLine: {'line': b'running install_scripts\n'}
+[4.519629] (udp_to_ros) StdoutLine: {'line': b"removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages/udp_to_ros-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.520573] (udp_to_ros) StdoutLine: {'line': b'Copying ../../build/udp_to_ros/udp_to_ros.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.8/site-packages/udp_to_ros-0.0.0-py3.8.egg-info\n'}
+[4.526355] (tcp_cam_sender) StdoutLine: {'line': b"removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages/tcp_cam_sender-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.526813] (udp_to_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[4.527020] (tcp_cam_sender) StdoutLine: {'line': b'Copying ../../build/tcp_cam_sender/tcp_cam_sender.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.8/site-packages/tcp_cam_sender-0.0.0-py3.8.egg-info\n'}
+[4.527182] (tcp_cam_sender) StdoutLine: {'line': b'running install_scripts\n'}
+[4.532594] (yolov5_ros2) StdoutLine: {'line': b"removing '/home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.533514] (yolov5_ros2) StdoutLine: {'line': b'Copying ../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info\n'}
+[4.535786] (yolov5_ros2) StdoutLine: {'line': b'running install_scripts\n'}
+[4.549756] (-) TimerEvent: {}
+[4.623510] (common) StdoutLine: {'line': b"writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/common/install.log'\n"}
+[4.631077] (udp_to_ros) StdoutLine: {'line': b'Installing udp_listener script to /home/sbel/Desktop/Cobra-Driver/workspace/install/udp_to_ros/lib/udp_to_ros\n'}
+[4.631768] (tcp_cam_sender) StdoutLine: {'line': b'Installing tcp_cam_sender script to /home/sbel/Desktop/Cobra-Driver/workspace/install/tcp_cam_sender/lib/tcp_cam_sender\n'}
+[4.632366] (udp_to_ros) StdoutLine: {'line': b"writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/udp_to_ros/install.log'\n"}
+[4.632607] (tcp_cam_sender) StdoutLine: {'line': b"writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/tcp_cam_sender/install.log'\n"}
+[4.645272] (yolov5_ros2) StdoutLine: {'line': b'Installing yolo_cone_detector script to /home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[4.646237] (yolov5_ros2) StdoutLine: {'line': b'Installing yolo_detector script to /home/sbel/Desktop/Cobra-Driver/workspace/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[4.647620] (yolov5_ros2) StdoutLine: {'line': b"writing list of installed files to '/home/sbel/Desktop/Cobra-Driver/workspace/build/yolov5_ros2/install.log'\n"}
+[4.649924] (-) TimerEvent: {}
+[4.751021] (-) TimerEvent: {}
+[4.796909] (udp_to_ros) CommandEnded: {'returncode': 0}
+[4.833720] (udp_to_ros) JobEnded: {'identifier': 'udp_to_ros', 'rc': 0}
+[4.837209] (common) CommandEnded: {'returncode': 0}
+[4.851081] (-) TimerEvent: {}
+[4.860166] (common) JobEnded: {'identifier': 'common', 'rc': 0}
+[4.861948] (tcp_cam_sender) CommandEnded: {'returncode': 0}
+[4.879024] (tcp_cam_sender) JobEnded: {'identifier': 'tcp_cam_sender', 'rc': 0}
+[4.886003] (yolov5_ros2) CommandEnded: {'returncode': 0}
+[4.903453] (yolov5_ros2) JobEnded: {'identifier': 'yolov5_ros2', 'rc': 0}
+[4.906487] (-) EventReactorShutdown: {}
