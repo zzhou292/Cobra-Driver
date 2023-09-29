@@ -5,6 +5,7 @@ from cv_bridge import CvBridge
 import onnxruntime as ort
 import cv2
 import numpy as np
+import socket  # <-- Added this import for TCP functionality
 
 class YOLOv5Detector(Node):
 
@@ -25,12 +26,16 @@ class YOLOv5Detector(Node):
             10)
         self.subscription
 
+        # TCP Configuration
+        self.tcp_ip = "127.0.0.1"
+        self.tcp_port = 1212
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.connect((self.tcp_ip, self.tcp_port))
+
     def listener_callback(self, msg):
         # Convert ROS Image message to OpenCV image
         cv_img = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         
-        
-
         # Ensure image is 1280x704
         cv_img_resized = cv2.resize(cv_img, (1280, 704))
         
@@ -38,30 +43,20 @@ class YOLOv5Detector(Node):
         
         # Convert image to NCHW format and normalize to [0,1]
         img_tensor = np.transpose(cv_img_resized_rgb, (2, 0, 1)).astype(np.float16) / 255.0
-        # Reshape the tensor to correct its shape
         img_tensor = img_tensor.reshape(1, 3, 704, 1280).astype(np.float16)
-
-        
-        print(img_tensor.shape)
         
         # Perform inference
         ort_inputs = {self.ort_session.get_inputs()[0].name: img_tensor}
         detections = self.ort_session.run(None, ort_inputs)[0]
         
-        print("Detections shape:", detections.shape)
-        print("Sample detection values:", detections[0])
-
         # Process and visualize detections
-        for det in detections[0]:  # Assuming detections shape is something like (1, num_detections, num_values_per_detection)
-
-            # Extract bounding box details
+        for det in detections[0]:
             x_center, y_center, width, height, confidence = det[:5]
             class_probs = det[5:]
             class_id = np.argmax(class_probs)
             class_score = class_probs[class_id]
-        
-
-            if confidence * class_score > 0.5:  # Adjust the threshold if necessary
+            
+            if confidence * class_score > 0.5:
                 x1 = int(x_center - width / 2)
                 y1 = int(y_center - height / 2)
                 x2 = int(x_center + width / 2)
@@ -71,8 +66,20 @@ class YOLOv5Detector(Node):
                 cv2.putText(cv_img_resized, f"Class {class_id} {confidence * class_score:.2f}", (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)
 
         # Display the image with detections
-        cv2.imshow("Detections", cv_img_resized)
-        cv2.waitKey(1)
+        # cv2.imshow("Detections", cv_img_resized)
+        # cv2.waitKey(1)
+
+        # Send the processed image with detections over TCP
+        img_data = cv2.imencode('.jpg', cv_img_resized)[1].tobytes()
+        length = len(img_data)
+        try:
+            self.sock.sendall(length.to_bytes(4, byteorder='big'))
+            self.sock.sendall(img_data)
+        except:
+            print("Failed to send data over TCP. Check the connection.")
+
+    def __del__(self):
+        self.sock.close()
 
 def main(args=None):
     rclpy.init(args=args)
