@@ -1,8 +1,16 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.substitutions import ThisLaunchFileDir
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import IncludeLaunchDescription
 
 def generate_launch_description():
     return LaunchDescription([
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                [ThisLaunchFileDir(), '/../../../velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-launch.py']
+            )
+        ),
         Node(
             package='tcp_cam_sender',
             executable='tcp_cam_sender'
@@ -18,10 +26,6 @@ def generate_launch_description():
         Node(
             package='yolov5_ros2',
             executable='yolo_cone_detector'
-        ),
-        Node(
-            package='velodyne',
-            executable='velodyne-all-nodes-VLP16-launch.py'
         ),
         Node(
             package='rosapi',

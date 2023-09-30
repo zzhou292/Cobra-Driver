@@ -21,7 +21,7 @@ def generate_launch_description():
         ),
         Node(
             package='velodyne',
-            executable='velodyne-all-nodes-VLP16-launch.py'
+            executable='velodyne-all-nodes-VLP16-launch'
         ),
         Node(
             package='rosapi',
