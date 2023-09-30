@@ -18,5 +18,17 @@ def generate_launch_description():
         Node(
             package='yolov5_ros2',
             executable='yolo_cone_detector'
+        ),
+        Node(
+            package='velodyne',
+            executable='velodyne-all-nodes-VLP16-launch.py'
+        ),
+        Node(
+            package='rosapi',
+            executable='rosapi_node'
+        ),
+        Node(
+            package='rosbridge_server',
+            executable='rosbridge_websocket'
         )
     ])

@@ -16,7 +16,7 @@ class YOLOv5Detector(Node):
         self.bridge = CvBridge()
 
         # Load the ONNX model
-        self.ort_session = ort.InferenceSession("/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/yolov5_ros2/yolov5_ros2/real.onnx",providers=["CUDAExecutionProvider"])
+        self.ort_session = ort.InferenceSession("/home/sbel/Desktop/Cobra-Driver/workspace/src/yolov5_ros2/yolov5_ros2/real.onnx",providers=["CUDAExecutionProvider"])
 
         # Create subscription to the raw image topic
         self.subscription = self.create_subscription(

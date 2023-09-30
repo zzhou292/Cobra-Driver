@@ -7,3 +7,6 @@
 [submodule "workspace/src/yolov5_ros2/yolov5"]
 	path = workspace/src/yolov5_ros2/yolov5
 	url = https://github.com/ultralytics/yolov5.git
+[submodule "workspace/src/velodyne"]
+	path = workspace/src/velodyne
+	url = https://github.com/ros-drivers/velodyne.git
