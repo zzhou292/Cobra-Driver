@@ -10,3 +10,6 @@
 [submodule "workspace/src/velodyne"]
 	path = workspace/src/velodyne
 	url = https://github.com/ros-drivers/velodyne.git
+[submodule "workspace/src/lidarslam_ros2"]
+	path = workspace/src/lidarslam_ros2
+	url = https://github.com/zzhou292/lidarslam_ros2.git
