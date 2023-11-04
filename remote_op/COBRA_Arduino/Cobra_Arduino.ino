@@ -1,6 +1,5 @@
 /*
  * This code was made by the senior design team working on the Viper Rover Project
- * Last edit 7/27/23
 */
 
 // Servo Libraries
@@ -91,11 +90,12 @@ float sBRAngle = 0;
 float sFLAngle = 0;
 float sBLAngle = 0  ;
 
-// neutral position pushing back
-float sFRA0 = 89;
-float sBRA0 = 90;
-float sFLA0 = 89;
-float sBLA0 = 90;
+// neutral position of servos [going straight forward]
+// as of 11/3/2023 - calibrated visually
+float sFRA0 = 104;
+float sBRA0 = 98;
+float sFLA0 = 85;
+float sBLA0 = 85;
 
 // counter var
 int counter = 0;
@@ -289,7 +289,13 @@ void loop() {
   sBRAngle = sBRA0 + rcCH1*-0.25;
   sFLAngle = sFLA0 + rcCH1*0.3;
   sBLAngle = sBLA0 + rcCH1*-0.25;
-  
+  // IF(GOING IN REVERSE) SUM ANGLE BY SLACK [ASSUMED TO BE 15DEG]
+  if(MotorDirFR == 0){
+  sFRAngle += - 15;
+  sBRAngle += -15;
+  sFLAngle += 15;
+  sBLAngle += 15;
+  }
   // Normal Mode
   
   // Set forward/backward direction with channel 2 value

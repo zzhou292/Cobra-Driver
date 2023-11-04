@@ -89,11 +89,11 @@ float sBRAngle = 0;
 float sFLAngle = 0;
 float sBLAngle = 0  ;
 
-// neutral position pushing back
-float sFRA0 = 89;
-float sBRA0 = 90;
-float sFLA0 = 89;
-float sBLA0 = 90;
+// neutral position of servos [going straight forward]
+float sFRA0 = 104;
+float sBRA0 = 98;
+float sFLA0 = 85;
+float sBLA0 = 85;
 
 // counter var
 int counter = 0;
