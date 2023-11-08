@@ -1,0 +1,38 @@
+[3.388s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_to_ros': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed
+[3.717s] running egg_info
+[3.719s] writing ../../build/udp_to_ros/udp_to_ros.egg-info/PKG-INFO
+[3.719s] writing dependency_links to ../../build/udp_to_ros/udp_to_ros.egg-info/dependency_links.txt
+[3.719s] writing entry points to ../../build/udp_to_ros/udp_to_ros.egg-info/entry_points.txt
+[3.720s] writing requirements to ../../build/udp_to_ros/udp_to_ros.egg-info/requires.txt
+[3.722s] writing top-level names to ../../build/udp_to_ros/udp_to_ros.egg-info/top_level.txt
+[3.782s] reading manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[3.782s] writing manifest file '../../build/udp_to_ros/udp_to_ros.egg-info/SOURCES.txt'
+[3.782s] running build
+[3.782s] running build_py
+[3.782s] copying udp_to_ros/cmd_listener_node.py -> /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build/lib/udp_to_ros
+[3.782s] running install
+[3.783s] /home/jason/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[3.783s] !!
+[3.783s] 
+[3.783s]         ********************************************************************************
+[3.783s]         Please avoid running ``setup.py`` directly.
+[3.783s]         Instead, use pypa/build, pypa/installer or other
+[3.783s]         standards-based tools.
+[3.783s] 
+[3.783s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[3.783s]         ********************************************************************************
+[3.783s] 
+[3.783s] !!
+[3.784s]   self.initialize_options()
+[3.788s] running install_lib
+[3.820s] copying /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build/lib/udp_to_ros/cmd_listener_node.py -> /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros
+[3.822s] byte-compiling /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros/cmd_listener_node.py to cmd_listener_node.cpython-310.pyc
+[3.822s] running install_data
+[3.855s] running install_egg_info
+[3.889s] removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[3.889s] Copying ../../build/udp_to_ros/udp_to_ros.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages/udp_to_ros-0.0.0-py3.10.egg-info
+[3.890s] running install_scripts
+[4.164s] Installing cmd_listener script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/udp_to_ros
+[4.164s] Installing udp_listener script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/udp_to_ros
+[4.164s] writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log'
+[4.472s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/udp_to_ros' returned '0': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/udp_to_ros build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/udp_to_ros/install.log --single-version-externally-managed

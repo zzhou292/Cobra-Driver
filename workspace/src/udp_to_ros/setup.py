@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
          'udp_listener = udp_to_ros.udp_listener_node:main',
+         'cmd_listener = udp_to_ros.cmd_listener_node:main'
         ],
     },
 )

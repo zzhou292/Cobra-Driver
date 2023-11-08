@@ -1,0 +1,9 @@
+waypoint_control:
+  ros__parameters:
+    path_file_name: '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/data/PATH_REAL.txt'
+    look_ahead_distance: 3.0  # Example value
+    default_throttle: 1.54
+    pid_parameters:
+      p: 0.14  # Example value
+      i: 0.0  # Example value
+      d: 0.0 # Example value

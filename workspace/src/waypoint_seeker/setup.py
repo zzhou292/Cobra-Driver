@@ -10,7 +10,9 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, ['param/config.yaml']),
-        ('share/' + package_name, ['launch/waypoint_launch.py'])  # Corrected this line
+        ('share/' + package_name, ['param/config_real.yaml']),
+        ('share/' + package_name, ['launch/waypoint_launch.py']),
+        ('share/' + package_name, ['launch/waypoint_real.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

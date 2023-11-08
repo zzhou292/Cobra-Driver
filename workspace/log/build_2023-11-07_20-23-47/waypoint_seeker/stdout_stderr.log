@@ -1,0 +1,32 @@
+running egg_info
+writing ../../build/waypoint_seeker/waypoint_seeker.egg-info/PKG-INFO
+writing dependency_links to ../../build/waypoint_seeker/waypoint_seeker.egg-info/dependency_links.txt
+writing entry points to ../../build/waypoint_seeker/waypoint_seeker.egg-info/entry_points.txt
+writing requirements to ../../build/waypoint_seeker/waypoint_seeker.egg-info/requires.txt
+writing top-level names to ../../build/waypoint_seeker/waypoint_seeker.egg-info/top_level.txt
+reading manifest file '../../build/waypoint_seeker/waypoint_seeker.egg-info/SOURCES.txt'
+writing manifest file '../../build/waypoint_seeker/waypoint_seeker.egg-info/SOURCES.txt'
+running build
+running build_py
+/home/jason/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages/waypoint_seeker-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/waypoint_seeker/waypoint_seeker.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages/waypoint_seeker-0.0.0-py3.10.egg-info
+running install_scripts
+Installing waypoint_control script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/waypoint_seeker
+writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/install.log'

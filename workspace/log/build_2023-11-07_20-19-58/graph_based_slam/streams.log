@@ -1,0 +1,245 @@
+[0.157s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake /home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/lidarslam_ros2/graph_based_slam -DCMAKE_INSTALL_PREFIX=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam
+[0.231s] -- The C compiler identification is GNU 11.4.0
+[0.285s] -- The CXX compiler identification is GNU 11.4.0
+[0.301s] -- Detecting C compiler ABI info
+[0.365s] -- Detecting C compiler ABI info - done
+[0.375s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.376s] -- Detecting C compile features
+[0.376s] -- Detecting C compile features - done
+[0.386s] -- Detecting CXX compiler ABI info
+[0.459s] -- Detecting CXX compiler ABI info - done
+[0.470s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.470s] -- Detecting CXX compile features
+[0.470s] -- Detecting CXX compile features - done
+[0.475s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.978s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.087s] -- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+[1.161s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.181s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.207s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.445s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.451s] -- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.597s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.635s] -- Found FastRTPS: /opt/ros/iron/include  
+[1.700s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.911s] -- Found rclcpp_components: 21.0.3 (/opt/ros/iron/share/rclcpp_components/cmake)
+[2.032s] -- Found geometry_msgs: 5.0.0 (/opt/ros/iron/share/geometry_msgs/cmake)
+[2.143s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[2.257s] -- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)
+[2.384s] -- Found std_srvs: 5.0.0 (/opt/ros/iron/share/std_srvs/cmake)
+[2.439s] -- Found tf2_ros: 0.31.5 (/opt/ros/iron/share/tf2_ros/cmake)
+[2.803s] -- Found tf2_eigen: 0.31.5 (/opt/ros/iron/share/tf2_eigen/cmake)
+[2.821s] -- Found tf2_geometry_msgs: 0.31.5 (/opt/ros/iron/share/tf2_geometry_msgs/cmake)
+[2.838s] -- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)
+[2.839s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.839s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.852s] -- Found tf2_sensor_msgs: 0.31.5 (/opt/ros/iron/share/tf2_sensor_msgs/cmake)
+[2.874s] -- Found pcl_conversions: 2.4.0 (/opt/ros/iron/share/pcl_conversions/cmake)
+[3.049s] -- Found lidarslam_msgs: 0.0.0 (/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/share/lidarslam_msgs/cmake)
+[3.209s] -- Found ndt_omp_ros2: 0.0.0 (/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2/share/ndt_omp_ros2/cmake)
+[3.222s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[3.222s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[3.223s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[3.223s]   cmake_policy command to set the policy and suppress this warning.
+[3.223s] 
+[3.223s]   CMake variable EIGEN_ROOT is set to:
+[3.223s] 
+[3.223s]     /usr/include/eigen3
+[3.223s] 
+[3.223s]   For compatibility, find_package is ignoring the variable, but code in a
+[3.223s]   .cmake module might still use it.
+[3.223s] Call Stack (most recent call first):
+[3.223s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[3.223s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[3.223s]   CMakeLists.txt:37 (find_package)
+[3.223s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.223s] [0m
+[3.228s] -- Checking for module 'eigen3'
+[3.244s] --   Found eigen3, version 3.4.0
+[3.282s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.282s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.316s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[3.317s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[3.317s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[3.317s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[3.317s]   cmake_policy command to set the policy and suppress this warning.
+[3.317s] 
+[3.317s]   CMake variable FLANN_ROOT is set to:
+[3.317s] 
+[3.318s]     /usr
+[3.318s] 
+[3.318s]   For compatibility, find_package is ignoring the variable, but code in a
+[3.318s]   .cmake module might still use it.
+[3.318s] Call Stack (most recent call first):
+[3.318s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[3.318s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[3.318s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[3.318s]   CMakeLists.txt:37 (find_package)
+[3.318s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.318s] [0m
+[3.337s] -- Checking for module 'flann'
+[3.353s] --   Found flann, version 1.9.1
+[3.401s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.401s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.441s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.506s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.507s] -- Found Threads: TRUE  
+[3.509s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[3.518s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[3.652s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[3.652s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[3.656s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[3.677s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")  
+[3.712s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[3.726s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[3.932s] -- Found X11: /usr/include   
+[3.932s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[3.996s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[3.996s] -- Looking for gethostbyname
+[4.056s] -- Looking for gethostbyname - found
+[4.056s] -- Looking for connect
+[4.116s] -- Looking for connect - found
+[4.117s] -- Looking for remove
+[4.176s] -- Looking for remove - found
+[4.176s] -- Looking for shmat
+[4.234s] -- Looking for shmat - found
+[4.234s] -- Looking for IceConnectionNumber in ICE
+[4.295s] -- Looking for IceConnectionNumber in ICE - found
+[4.463s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[4.465s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[4.469s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[4.471s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[4.489s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[4.497s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[4.507s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[4.512s] -- Found utf8cpp: /usr/include/utf8cpp  
+[4.608s] -- Checking for module 'libusb-1.0'
+[4.627s] --   Found libusb-1.0, version 1.0.25
+[4.670s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.672s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[4.672s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.742s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[4.742s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.742s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[5.080s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.087s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.094s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.429s] -- Found Qhull version 8.0.2
+[5.764s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.096s] -- looking for PCL_COMMON
+[6.097s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[6.098s] -- looking for PCL_KDTREE
+[6.099s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[6.099s] -- looking for PCL_OCTREE
+[6.100s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[6.100s] -- looking for PCL_SEARCH
+[6.101s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[6.101s] -- looking for PCL_SAMPLE_CONSENSUS
+[6.102s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[6.102s] -- looking for PCL_FILTERS
+[6.103s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[6.103s] -- looking for PCL_2D
+[6.103s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[6.103s] -- looking for PCL_GEOMETRY
+[6.104s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[6.104s] -- looking for PCL_IO
+[6.105s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[6.105s] -- looking for PCL_FEATURES
+[6.106s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[6.106s] -- looking for PCL_ML
+[6.107s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[6.107s] -- looking for PCL_SEGMENTATION
+[6.108s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[6.108s] -- looking for PCL_VISUALIZATION
+[6.109s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[6.110s] -- looking for PCL_SURFACE
+[6.111s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[6.111s] -- looking for PCL_REGISTRATION
+[6.112s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[6.112s] -- looking for PCL_KEYPOINTS
+[6.114s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[6.114s] -- looking for PCL_TRACKING
+[6.115s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[6.115s] -- looking for PCL_RECOGNITION
+[6.116s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[6.117s] -- looking for PCL_STEREO
+[6.118s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[6.118s] -- looking for PCL_APPS
+[6.119s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[6.119s] -- looking for PCL_IN_HAND_SCANNER
+[6.120s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[6.120s] -- looking for PCL_MODELER
+[6.120s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[6.120s] -- looking for PCL_POINT_CLOUD_EDITOR
+[6.120s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[6.121s] -- looking for PCL_OUTOFCORE
+[6.122s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[6.122s] -- looking for PCL_PEOPLE
+[6.123s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[6.124s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[6.129s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.132s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[6.364s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[6.446s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[6.446s] -- Found OpenMP: TRUE (found version "4.5")  
+[6.450s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[6.636s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.638s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.638s] -- Configured cppcheck include dirs: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/lidarslam_ros2/graph_based_slam/include
+[6.638s] -- Configured cppcheck exclude dirs and/or files: 
+[6.640s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.640s] -- Configured cpplint exclude dirs and/or files: 
+[6.641s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.641s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.643s] -- Added test 'lint_cmake' to check CMake code style
+[6.644s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.646s] -- Added test 'uncrustify' to check C / C++ code style
+[6.646s] -- Configured uncrustify additional arguments: 
+[6.647s] -- Added test 'xmllint' to check XML markup files
+[6.651s] -- Configuring done (6.5s)
+[6.722s] -- Generating done (0.0s)
+[6.725s] -- Build files have been written to: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam
+[6.744s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam' returned '0': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake /home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/lidarslam_ros2/graph_based_slam -DCMAKE_INSTALL_PREFIX=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam
+[6.745s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake --build /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam -- -j16 -l16
+[6.799s] [ 25%] [32mBuilding CXX object CMakeFiles/graph_based_slam_component.dir/src/graph_based_slam_component.cpp.o[0m
+[64.462s] [ 50%] [32m[1mLinking CXX shared library libgraph_based_slam_component.so[0m
+[65.382s] [ 50%] Built target graph_based_slam_component
+[65.395s] [ 75%] [32mBuilding CXX object CMakeFiles/graph_based_slam_node.dir/src/graph_based_slam_node.cpp.o[0m
+[80.242s] [100%] [32m[1mLinking CXX executable graph_based_slam_node[0m
+[81.045s] [100%] Built target graph_based_slam_node
+[81.054s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam' returned '0': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake --build /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam -- -j16 -l16
+[81.113s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake --install /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam
+[81.140s] -- Install configuration: ""
+[81.140s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/library_path.sh
+[81.140s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/library_path.dsv
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/include
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/include/graph_based_slam
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/launch
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/launch/graphbasedslam.launch.py
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/param
+[81.141s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/param/graphbasedslam.yaml
+[81.142s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib/libgraph_based_slam_component.so
+[81.267s] -- Set runtime path of "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib/libgraph_based_slam_component.so" to ""
+[81.267s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib/graph_based_slam/graph_based_slam_node
+[81.293s] -- Set runtime path of "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib/graph_based_slam/graph_based_slam_node" to ""
+[81.293s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/ament_index/resource_index/package_run_dependencies/graph_based_slam
+[81.293s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/ament_index/resource_index/parent_prefix_path/graph_based_slam
+[81.293s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/ament_prefix_path.sh
+[81.293s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/ament_prefix_path.dsv
+[81.294s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/path.sh
+[81.294s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/environment/path.dsv
+[81.294s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/local_setup.bash
+[81.294s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/local_setup.sh
+[81.294s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/local_setup.zsh
+[81.295s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/local_setup.dsv
+[81.295s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/package.dsv
+[81.295s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/ament_index/resource_index/packages/graph_based_slam
+[81.295s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/ament_index/resource_index/rclcpp_components/graph_based_slam
+[81.295s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/cmake/ament_cmake_export_libraries-extras.cmake
+[81.296s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/cmake/ament_cmake_export_include_directories-extras.cmake
+[81.296s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/cmake/graph_based_slamConfig.cmake
+[81.296s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/cmake/graph_based_slamConfig-version.cmake
+[81.296s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/share/graph_based_slam/package.xml
+[81.302s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam' returned '0': CMAKE_PREFIX_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ndt_omp_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tf_data:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_suite:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron LD_LIBRARY_PATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/scanmatcher/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/graph_based_slam/lib:/usr/local/cuda-12.0/targets/x86_64-linux/lib/:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/lidarslam_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/chrono_ros_interfaces/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_test_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_server/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_library/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosapi_msgs/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save/lib/python3.10/site-packages:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /home/jason/.local/bin/cmake --install /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/graph_based_slam

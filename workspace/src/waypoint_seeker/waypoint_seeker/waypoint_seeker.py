@@ -31,6 +31,7 @@ class WaypointNode(Node):
         self.look_ahead_distance = self.declare_parameter('look_ahead_distance', 4.0).get_parameter_value().double_value
         self.pid_p = self.declare_parameter('pid_parameters.p', 0.3).get_parameter_value().double_value
         self.pid_d = self.declare_parameter('pid_parameters.d', 0.005).get_parameter_value().double_value
+        self.throttle = self.declare_parameter('default_throttle', 0.5).get_parameter_value().double_value
         
         # Initialize previous error and time
         self.previous_heading_error = 0.0
@@ -99,7 +100,7 @@ class WaypointNode(Node):
         # Create and publish CobraSpeedDriver message
         speed_driver_msg = CobraSpeedDriver()
         speed_driver_msg.steering = steering
-        speed_driver_msg.speed = math.pi  # Speed is always pi
+        speed_driver_msg.speed = self.throttle  # Speed is always pi
         self.speed_driver_publisher.publish(speed_driver_msg)
 
         # Log the closest waypoint

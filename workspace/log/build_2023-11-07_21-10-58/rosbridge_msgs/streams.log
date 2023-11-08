@@ -1,0 +1,168 @@
+[1.127s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron /home/jason/.local/bin/cmake --build /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs -- -j16 -l16
+[2.679s] [  2%] Built target rosbridge_msgs__rosidl_generator_type_description
+[2.679s] [  2%] Built target ament_cmake_python_copy_rosbridge_msgs
+[2.679s] [  4%] Built target rosbridge_msgs__cpp
+[2.679s] [ 22%] Built target rosbridge_msgs__rosidl_generator_c
+[2.679s] [ 31%] Built target rosbridge_msgs__rosidl_typesupport_introspection_cpp
+[2.679s] [ 40%] Built target rosbridge_msgs__rosidl_typesupport_fastrtps_c
+[2.679s] [ 50%] Built target rosbridge_msgs__rosidl_typesupport_fastrtps_cpp
+[2.679s] [ 59%] Built target rosbridge_msgs__rosidl_typesupport_cpp
+[2.679s] [ 68%] Built target rosbridge_msgs__rosidl_typesupport_c
+[2.679s] [ 77%] Built target rosbridge_msgs__rosidl_typesupport_introspection_c
+[2.680s] [ 77%] Built target rosbridge_msgs
+[2.680s] [ 79%] Built target rosbridge_msgs__py
+[2.680s] [ 86%] Built target rosbridge_msgs__rosidl_generator_py
+[2.680s] [ 90%] Built target rosbridge_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.680s] [ 95%] Built target rosbridge_msgs__rosidl_typesupport_introspection_c__pyext
+[2.680s] [100%] Built target rosbridge_msgs__rosidl_typesupport_c__pyext
+[2.680s] running egg_info
+[2.680s] writing rosbridge_msgs.egg-info/PKG-INFO
+[2.680s] writing dependency_links to rosbridge_msgs.egg-info/dependency_links.txt
+[2.680s] writing top-level names to rosbridge_msgs.egg-info/top_level.txt
+[2.680s] reading manifest file 'rosbridge_msgs.egg-info/SOURCES.txt'
+[2.680s] writing manifest file 'rosbridge_msgs.egg-info/SOURCES.txt'
+[2.680s] [100%] Built target ament_cmake_python_build_rosbridge_msgs_egg
+[2.970s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron /home/jason/.local/bin/cmake --build /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs -- -j16 -l16
+[3.338s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron /home/jason/.local/bin/cmake --install /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs
+[3.494s] -- Install configuration: ""
+[3.495s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/ament_index/resource_index/rosidl_interfaces/rosbridge_msgs
+[3.497s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClient.json
+[3.498s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClients.json
+[3.498s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.499s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.499s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/connected_client.h
+[3.499s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/connected_clients.h
+[3.499s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.499s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.500s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__functions.c
+[3.501s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__description.c
+[3.501s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__struct.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__type_support.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__functions.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__functions.c
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__type_support.c
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__struct.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__type_support.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__type_support.c
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__functions.h
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__description.c
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/library_path.sh
+[3.502s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/library_path.dsv
+[3.503s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_generator_c.so
+[3.503s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.503s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.513s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.513s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.513s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__rosidl_typesupport_fastrtps_c.h
+[3.514s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__rosidl_typesupport_fastrtps_c.h
+[3.514s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_fastrtps_c.so
+[3.514s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.514s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.514s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/connected_client.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/connected_clients.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__struct.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__traits.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__builder.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__traits.hpp
+[3.515s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__builder.hpp
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__struct.hpp
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__rosidl_typesupport_fastrtps_cpp.hpp
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__rosidl_typesupport_fastrtps_cpp.hpp
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/dds_fastrtps
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.516s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.532s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.532s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.533s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__rosidl_typesupport_introspection_c.h
+[3.533s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__type_support.c
+[3.533s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__rosidl_typesupport_introspection_c.h
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__type_support.c
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_introspection_c.so
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_c.so
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail
+[3.534s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__rosidl_typesupport_introspection_cpp.hpp
+[3.535s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_clients__type_support.cpp
+[3.535s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__type_support.cpp
+[3.535s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/include/rosbridge_msgs/rosbridge_msgs/msg/detail/connected_client__rosidl_typesupport_introspection_cpp.hpp
+[3.535s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_introspection_cpp.so
+[3.536s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_typesupport_cpp.so
+[3.536s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/pythonpath.sh
+[3.536s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/pythonpath.dsv
+[3.537s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs-1.3.1-py3.10.egg-info
+[3.537s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs-1.3.1-py3.10.egg-info/top_level.txt
+[3.537s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs-1.3.1-py3.10.egg-info/dependency_links.txt
+[3.537s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs-1.3.1-py3.10.egg-info/SOURCES.txt
+[3.538s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs-1.3.1-py3.10.egg-info/PKG-INFO
+[3.538s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs
+[3.538s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.539s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/__init__.py
+[3.539s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/_rosbridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.539s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/_rosbridge_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.541s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.541s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/_rosbridge_msgs_s.ep.rosidl_typesupport_c.c
+[3.541s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/librosbridge_msgs__rosidl_generator_py.so
+[3.542s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg
+[3.542s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg/_connected_client_s.c
+[3.542s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg/_connected_clients.py
+[3.542s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg/_connected_client.py
+[3.543s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg/_connected_clients_s.c
+[3.543s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg/__init__.py
+[3.543s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.543s] Listing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs'...
+[3.543s] Listing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/msg'...
+[3.544s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.545s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.546s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/python3.10/site-packages/rosbridge_msgs/rosbridge_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.546s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/lib/librosbridge_msgs__rosidl_generator_py.so
+[3.546s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClient.idl
+[3.546s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClients.idl
+[3.546s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClient.msg
+[3.547s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/msg/ConnectedClients.msg
+[3.547s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/ament_index/resource_index/package_run_dependencies/rosbridge_msgs
+[3.548s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/ament_index/resource_index/parent_prefix_path/rosbridge_msgs
+[3.549s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/ament_prefix_path.sh
+[3.549s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/ament_prefix_path.dsv
+[3.549s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/path.sh
+[3.550s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/environment/path.dsv
+[3.550s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/local_setup.bash
+[3.550s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/local_setup.sh
+[3.550s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/local_setup.zsh
+[3.550s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/local_setup.dsv
+[3.551s] -- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/package.dsv
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/ament_index/resource_index/packages/rosbridge_msgs
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_generator_cExport.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_generator_cppExport.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.551s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_cExport.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_cppExport.cmake
+[3.552s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_generator_pyExport.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/export_rosbridge_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosidl_cmake-extras.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.553s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.554s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.554s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgsConfig.cmake
+[3.554s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/cmake/rosbridge_msgsConfig-version.cmake
+[3.554s] -- Up-to-date: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/rosbridge_msgs/share/rosbridge_msgs/package.xml
+[3.761s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/udp_to_ros:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/tcp_cam_sender:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/ptcloud_save:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/common:/opt/ros/iron /home/jason/.local/bin/cmake --install /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/rosbridge_msgs

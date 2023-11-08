@@ -1,0 +1,35 @@
+[3.668s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/waypoint_seeker build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/install.log --single-version-externally-managed
+[3.907s] running egg_info
+[3.928s] writing ../../build/waypoint_seeker/waypoint_seeker.egg-info/PKG-INFO
+[3.928s] writing dependency_links to ../../build/waypoint_seeker/waypoint_seeker.egg-info/dependency_links.txt
+[3.928s] writing entry points to ../../build/waypoint_seeker/waypoint_seeker.egg-info/entry_points.txt
+[3.928s] writing requirements to ../../build/waypoint_seeker/waypoint_seeker.egg-info/requires.txt
+[3.928s] writing top-level names to ../../build/waypoint_seeker/waypoint_seeker.egg-info/top_level.txt
+[3.968s] reading manifest file '../../build/waypoint_seeker/waypoint_seeker.egg-info/SOURCES.txt'
+[3.968s] writing manifest file '../../build/waypoint_seeker/waypoint_seeker.egg-info/SOURCES.txt'
+[3.968s] running build
+[3.968s] running build_py
+[3.968s] running install
+[3.968s] /home/jason/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[3.968s] !!
+[3.969s] 
+[3.969s]         ********************************************************************************
+[3.969s]         Please avoid running ``setup.py`` directly.
+[3.969s]         Instead, use pypa/build, pypa/installer or other
+[3.969s]         standards-based tools.
+[3.969s] 
+[3.969s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[3.969s]         ********************************************************************************
+[3.969s] 
+[3.969s] !!
+[3.970s]   self.initialize_options()
+[3.973s] running install_lib
+[3.992s] running install_data
+[4.012s] copying param/config_real.yaml -> /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/share/waypoint_seeker
+[4.012s] running install_egg_info
+[4.032s] removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages/waypoint_seeker-0.0.0-py3.10.egg-info' (and everything under it)
+[4.032s] Copying ../../build/waypoint_seeker/waypoint_seeker.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages/waypoint_seeker-0.0.0-py3.10.egg-info
+[4.033s] running install_scripts
+[4.261s] Installing waypoint_control script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/waypoint_seeker
+[4.263s] writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/install.log'
+[4.599s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/waypoint_seeker' returned '0': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/waypoint_seeker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/waypoint_seeker build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/waypoint_seeker/install.log --single-version-externally-managed

@@ -1,0 +1,35 @@
+[3.118s] Invoking command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/yolov5_ros2': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/install.log --single-version-externally-managed
+[3.481s] running egg_info
+[3.483s] writing ../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO
+[3.483s] writing dependency_links to ../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt
+[3.483s] writing entry points to ../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt
+[3.483s] writing requirements to ../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt
+[3.483s] writing top-level names to ../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt
+[3.517s] reading manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[3.517s] writing manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[3.517s] running build
+[3.518s] running build_py
+[3.518s] running install
+[3.518s] /home/jason/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[3.518s] !!
+[3.518s] 
+[3.518s]         ********************************************************************************
+[3.518s]         Please avoid running ``setup.py`` directly.
+[3.519s]         Instead, use pypa/build, pypa/installer or other
+[3.519s]         standards-based tools.
+[3.519s] 
+[3.519s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[3.519s]         ********************************************************************************
+[3.519s] 
+[3.520s] !!
+[3.524s]   self.initialize_options()
+[3.525s] running install_lib
+[3.551s] running install_data
+[3.577s] running install_egg_info
+[3.603s] removing '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-0.0.0-py3.10.egg-info' (and everything under it)
+[3.604s] Copying ../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-0.0.0-py3.10.egg-info
+[3.604s] running install_scripts
+[3.854s] Installing yolo_cone_detector script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/yolov5_ros2
+[3.854s] Installing yolo_detector script to /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/yolov5_ros2
+[3.855s] writing list of installed files to '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/install.log'
+[4.325s] Invoked command in '/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/yolov5_ros2' returned '0': PYTHONPATH=/home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/prefix_override:/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/build install --record /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/yolov5_ros2/install.log --single-version-externally-managed

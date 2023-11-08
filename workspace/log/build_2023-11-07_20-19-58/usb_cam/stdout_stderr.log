@@ -1,0 +1,247 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.0.3 (/opt/ros/iron/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/iron/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 58.134.100
+-- Checking for module 'libswscale'
+--   Found libswscale, version 5.9.100
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/build/usb_cam
+[ 16%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kint usb_cam::UsbCam::init_mjpeg_decoder(int, int)[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:75:23:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid avcodec_register_all()[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   75 |   [01;35m[Kavcodec_register_all()[m[K;
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:2767:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2767 | void [01;36m[Kavcodec_register_all[m[K(void);
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:92:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_alloc(AVPicture*, AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   92 |   [01;35m[Kavpicture_alloc([m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~^[m[K
+   93 | [01;35m[K    reinterpret_cast<AVPicture *>(avframe_rgb_), AV_PIX_FMT_RGB24, image_width, image_height)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3751:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3751 | int [01;36m[Kavpicture_alloc[m[K(AVPicture *picture, enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:108:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  108 |   avframe_camera_size_ = [01;35m[Kavpicture_get_size(AV_PIX_FMT_YUV422P, image_width, image_height)[m[K;
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3778:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3778 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:109:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  109 |   avframe_rgb_size_ = [01;35m[Kavpicture_get_size(AV_PIX_FMT_RGB24, image_width, image_height)[m[K;
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3778:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3778 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::mjpeg2rgb(char*, int, char*, int)[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:136:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_init_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  136 |   [01;35m[Kav_init_packet(&avpkt)[m[K;
+      |   [01;35m[K~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/libavcodec/bsf.h:30[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:44[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/packet.h:488:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  488 | void [01;36m[Kav_init_packet[m[K(AVPacket *pkt);
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:142:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avcodec_decode_video2(AVCodecContext*, AVFrame*, int*, const AVPacket*)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  142 |   decoded_len = [01;35m[Kavcodec_decode_video2(avcodec_context_, avframe_camera_, &got_picture, &avpkt)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3096:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3096 | int [01;36m[Kavcodec_decode_video2[m[K(AVCodecContext *avctx, AVFrame *picture,
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:161:36:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  161 |   int pic_size = [01;35m[Kavpicture_get_size(avcodec_context_->pix_fmt, xsize, ysize)[m[K;
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3778:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3778 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:187:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_layout(const AVPicture*, AVPixelFormat, int, int, unsigned char*, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  187 |   int size = [01;35m[Kavpicture_layout([m[K
+      |              [01;35m[K~~~~~~~~~~~~~~~~^[m[K
+  188 | [01;35m[K    reinterpret_cast<AVPicture *>(avframe_rgb_), AV_PIX_FMT_RGB24,[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  189 | [01;35m[K    xsize, ysize, reinterpret_cast<uint8_t *>(RGB), avframe_rgb_size_)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/include/usb_cam/usb_cam.hpp:39[m[K,
+                 from [01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:31[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:3770:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 3770 | int [01;36m[Kavpicture_layout[m[K(const AVPicture *src, enum AVPixelFormat pix_fmt,
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::read_frame()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:274:29:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014673[m[K’ to ‘[01m[K-1067952623[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  274 |       if (-1 == xioctl(fd_, [01;35m[KVIDIOC_DQBUF[m[K, &buf)) {
+      |                             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:302:29:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014671[m[K’ to ‘[01m[K-1067952625[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  302 |       if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QBUF[m[K, &buf)) {
+      |                             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:317:29:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014673[m[K’ to ‘[01m[K-1067952623[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  317 |       if (-1 == xioctl(fd_, [01;35m[KVIDIOC_DQBUF[m[K, &buf)) {
+      |                             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:352:29:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014671[m[K’ to ‘[01m[K-1067952625[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  352 |       if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QBUF[m[K, &buf)) {
+      |                             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:242:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  242 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::stop_capturing()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:376:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  376 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::start_capturing()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:417:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014671[m[K’ to ‘[01m[K-1067952625[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  417 |         if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QBUF[m[K, &buf)) {
+      |                               [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:443:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014671[m[K’ to ‘[01m[K-1067952625[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  443 |         if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QBUF[m[K, &buf)) {
+      |                               [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:402:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  402 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::uninit_device()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:466:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  466 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::init_mmap()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:520:25:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3222558216[m[K’ to ‘[01m[K-1072409080[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  520 |   if (-1 == xioctl(fd_, [01;35m[KVIDIOC_REQBUFS[m[K, &req)) {
+      |                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:555:27:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3227014665[m[K’ to ‘[01m[K-1067952631[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  555 |     if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QUERYBUF[m[K, &buf)) {
+      |                           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::init_userp(unsigned int)[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:588:25:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3222558216[m[K’ to ‘[01m[K-1072409080[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  588 |   if (-1 == xioctl(fd_, [01;35m[KVIDIOC_REQBUFS[m[K, &req)) {
+      |                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::init_device(int, int, int)[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:627:25:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K2154321408[m[K’ to ‘[01m[K-2140645888[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  627 |   if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QUERYCAP[m[K, &cap)) {
+      |                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:646:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  646 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:675:24:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3224131130[m[K’ to ‘[01m[K-1070836166[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  675 |   if (0 == xioctl(fd_, [01;35m[KVIDIOC_CROPCAP[m[K, &cropcap)) {
+      |                        [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:701:25:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3234878981[m[K’ to ‘[01m[K-1060088315[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  701 |   if (-1 == xioctl(fd_, [01;35m[KVIDIOC_S_FMT[m[K, &fmt)) {
+      |                         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:707:21:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3234878980[m[K’ to ‘[01m[K-1060088316[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  707 |     if (xioctl(fd_, [01;35m[KVIDIOC_G_FMT[m[K, &fmt) >= 0) {
+      |                     [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:717:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[K__u32[m[K’ {aka ‘[01m[Kunsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  717 |         [01;35m[Kfmt.fmt.pix.width == image_width[m[K &&
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:718:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[K__u32[m[K’ {aka ‘[01m[Kunsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  718 |         [01;35m[Kfmt.fmt.pix.height == image_height[m[K) {
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:751:19:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3234616853[m[K’ to ‘[01m[K-1060350443[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  751 |   if (xioctl(fd_, [01;35m[KVIDIOC_G_PARM[m[K, &stream_params) < 0) {
+      |                   [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:766:19:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3234616854[m[K’ to ‘[01m[K-1060350442[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  766 |   if (xioctl(fd_, [01;35m[KVIDIOC_S_PARM[m[K, &stream_params) < 0) {
+      |                   [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:772:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KIO_METHOD_UNKNOWN[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  772 |   switch [01;35m[K([m[Kio_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCam::get_formats()[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:949:35:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3225441794[m[K’ to ‘[01m[K-1069525502[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  949 |   for (fmt.index = 0; xioctl(fd_, [01;35m[KVIDIOC_ENUM_FMT[m[K, &fmt) == 0; ++fmt.index) {
+      |                                   [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:959:38:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3224131146[m[K’ to ‘[01m[K-1070836150[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  959 |     for (size.index = 0; xioctl(fd_, [01;35m[KVIDIOC_ENUM_FRAMESIZES[m[K, &size) == 0; ++size.index) {
+      |                                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:968:44:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3224655435[m[K’ to ‘[01m[K-1070311861[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+  968 |       for (interval.index = 0; xioctl(fd_, [01;35m[KVIDIOC_ENUM_FRAMEINTERVALS[m[K, &interval) == 0;
+      |                                            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:[m[K In member function ‘[01m[Kbool usb_cam::UsbCam::set_auto_focus(int)[m[K’:
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:1034:25:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3225703972[m[K’ to ‘[01m[K-1069263324[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+ 1034 |   if (-1 == xioctl(fd_, [01;35m[KVIDIOC_QUERYCTRL[m[K, &queryctrl)) {
+      |                         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/Desktop/STUDY/Cobra-Driver/workspace/src/usb_cam/src/usb_cam.cpp:1050:27:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kint[m[K’ changes value from ‘[01m[K3221771804[m[K’ to ‘[01m[K-1073195492[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+ 1050 |     if (-1 == xioctl(fd_, [01;35m[KVIDIOC_S_CTRL[m[K, &control)) {
+      |                           [01;35m[K^~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX shared library libusb_cam.so[0m
+[ 66%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[ 66%] Built target usb_cam
+[ 83%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[ 83%] Built target usb_cam_node_exe
+[100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[100%] Built target usb_cam_node
+-- Install configuration: ""
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+-- Set runtime path of "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/usb_cam/show_image.py
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/include
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/include/usb_cam
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam_utils.hpp
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/include/usb_cam/usb_cam.hpp
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/library_path.sh
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/library_path.dsv
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam.so
+-- Set runtime path of "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam.so" to ""
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam_node.so
+-- Set runtime path of "/home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/lib/libusb_cam_node.so" to ""
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/launch
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/launch/demo_launch.py
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config/camera_info.yaml
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/config/params.yaml
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/path.sh
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/environment/path.dsv
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.bash
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.sh
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.zsh
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/local_setup.dsv
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.dsv
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+-- Installing: /home/jason/Desktop/STUDY/Cobra-Driver/workspace/install/usb_cam/share/usb_cam/package.xml
