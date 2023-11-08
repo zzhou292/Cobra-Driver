@@ -12,6 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, ['remoteop.launch.py']),
         ('share/' + package_name, ['remoteop.cone.launch.py']),
+        ('share/' + package_name, ['wayptpid.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
